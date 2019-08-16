@@ -13,5 +13,5 @@ twitter-timeline:
   chrome: nofooter noscrollbar noborders transparent
   tweet_limit: 5
   inject_js: true
-  twitter_width: 800
+  width: 800
 ---
