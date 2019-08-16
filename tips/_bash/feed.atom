@@ -1,0 +1,9 @@
+---
+layout: modules/feed-atom/feed-atom
+title: "Bash Tips"
+collection_name: bash
+collection_home: /bash/
+date: 2019-08-11 13:58:05 -0700
+content_type: xhtml
+permalink: /:collection/:name:output_ext
+---

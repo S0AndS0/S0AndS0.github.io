@@ -1,0 +1,20 @@
+[submodule "twitter-timeline"]
+	path = _includes/modules/twitter-timeline
+	url = https://github.com/liquid-utilities/twitter-timeline.git
+	branch = master
+[submodule "feed-atom"]
+	path = _layouts/modules/feed-atom
+	url = https://github.com/liquid-utilities/feed-atom.git
+	branch = master
+[submodule "feed-rss2"]
+	path = _layouts/modules/feed-rss2
+	url = https://github.com/liquid-utilities/feed-rss2.git
+	branch = master
+[submodule "collection-home"]
+	path = _layouts/modules/collection-home
+	url = https://github.com/liquid-utilities/collection-home.git
+	branch = master
+[submodule "vendor-prefixes"]
+	path = _sass/modules/vendor-prefixes
+	url = https://github.com/scss-utilities/vendor-prefixes.git
+	branch = master
