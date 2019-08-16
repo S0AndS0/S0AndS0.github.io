@@ -1,3 +1,8 @@
+---
+layout: home
+title: "Pages by S0AndS0"
+---
+
 # S0AndS0
 [heading__title]: #s0ands0 "&#x2B06; Top of ReadMe File"
 
