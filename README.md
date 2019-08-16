@@ -4,9 +4,6 @@ title: "Pages by S0AndS0"
 permalink: /index:output_ext
 ---
 
-# S0AndS0
-[heading__title]: #s0ands0 "&#x2B06; Top of ReadMe File"
-
 
 Miscellaneous tips, tricks, and thoughts from the author known as S0AndS0
 
@@ -20,8 +17,6 @@ Miscellaneous tips, tricks, and thoughts from the author known as S0AndS0
 
 #### Table of Contents
 
-
-- [&#x2B06; Top of ReadMe File][heading__title]
 
 - [&#9889; Quick Start][heading__quick_start]
 
