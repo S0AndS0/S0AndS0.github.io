@@ -21,17 +21,15 @@ Miscellaneous tips, tricks, and thoughts from the author known as S0AndS0
 #### Table of Contents
 
 
-- [:arrow_up: Top of ReadMe File][heading__title]
+- [&#x2B06; Top of ReadMe File][heading__title]
 
-- [:zap: Quick Start][heading__quick_start]
+- [&#9889; Quick Start][heading__quick_start]
 
 - [&#x1F5D2; Notes][notes]
 
-- [:card_index: Attribution][heading__attribution]
+- [&#x1F4C7; Attribution][heading__attribution]
 
 - [&#x2696; License][heading__license]
-
-- [:thought_balloon: Posts][heading__posts]
 
 
 ------
@@ -174,13 +172,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 ___
-
-
-## Post List
-[heading__posts]: https://S0AndS0.github.io/index.html#post-list "&#x1F4AD; Miscellaneous thoughts from the author known as S0AndS0"
-
-
-> Miscellaneous thoughts from the author known as S0AndS0, hosted on [GitHub Pages][heading__posts]
 
 
 
