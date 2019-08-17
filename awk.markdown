@@ -4,7 +4,7 @@ collection_name: awk
 list_title: Even more examples
 title: "Awk Tips"
 date: 2019-08-14 13:58:05 -0700
-categories: twitter tips
+categories: tips
 twitter-timeline:
   name: S0_And_S0
   text: "Awk Tweeted Tips"

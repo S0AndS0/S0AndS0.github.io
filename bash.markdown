@@ -4,7 +4,7 @@ collection_name: bash
 list_title: Even more examples
 title: "Bash Tips"
 date: 2019-08-11 13:58:05 -0700
-categories: twitter tips
+categories: tips
 twitter-timeline:
   name: S0_And_S0
   text: "Bash Tweeted Tips"
