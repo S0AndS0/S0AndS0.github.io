@@ -149,7 +149,7 @@ Legal bits of Open Source software
 
 
 ```
-Content and code of this file.
+Content and code (aside from third-party injections), of this file.
 Copyright (C) 2019  S0AndS0
 
 This program is free software: you can redistribute it and/or modify
