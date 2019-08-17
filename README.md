@@ -195,7 +195,7 @@ ___
 
 [badge__master__s0ands0__source_code]: https://img.shields.io/github/repo-size/S0AndS0/S0AndS0.github.io
 
-[master__source_code__s0ands0]: https://github.com/S0AndS0/S0AndS0.github.io/blob/master/S0AndS0.github.io "&#x2328; Source code that GitHub Pages builds!"
+[master__source_code__s0ands0]: https://github.com/S0AndS0/S0AndS0.github.io "&#x2328; Source code that GitHub Pages builds!"
 
 
 [s0ands0__jekyll_admin]: https://github.com/S0AndS0/Jekyll_Admin "Collection of scripts for administration and private git account interactions"
