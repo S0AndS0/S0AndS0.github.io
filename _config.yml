@@ -46,7 +46,7 @@ collections:
   javascript:
     output: true
     permalink: /:collection/:name/
-  python:
+  projects:
     output: true
     permalink: /:collection/:name/
 
