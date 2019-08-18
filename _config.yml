@@ -49,6 +49,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name/
+  python:
+    output: true
+    permalink: /:collection/:name/
 
 include:
   - .github/

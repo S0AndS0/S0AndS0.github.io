@@ -1,0 +1,9 @@
+---
+layout: modules/feed-rss2/feed-rss2
+title: "Python Tips"
+collection_name: python
+collection_home: /python/
+date: 2019-08-12 15:58:05 -0700
+content_type: xhtml
+permalink: /:collection/:name:output_ext
+---
