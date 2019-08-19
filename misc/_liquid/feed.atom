@@ -1,0 +1,9 @@
+---
+layout: modules/feed-atom/feed-atom
+title: "Liquid Tips"
+collection_name: liquid
+collection_home: /liquid/
+date: 2019-08-16 13:58:05 -0700
+content_type: xhtml
+permalink: /:collection/:name:output_ext
+---
