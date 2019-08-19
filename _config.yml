@@ -43,6 +43,9 @@ collections:
   bash:
     output: true
     permalink: /:collection/:name/
+  git:
+    output: true
+    permalink: /:collection/:name/
   javascript:
     output: true
     permalink: /:collection/:name/
