@@ -159,9 +159,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
 
-___
-
-
 
 [badge__commits__s0ands0__master]: https://img.shields.io/github/last-commit/S0AndS0/S0AndS0.github.io/master.svg
 
