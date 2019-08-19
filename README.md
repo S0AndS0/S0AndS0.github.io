@@ -1,10 +1,3 @@
----
-layout: home
-title: "Pages by S0AndS0"
-permalink: /index:output_ext
----
-
-
 Miscellaneous tips, tricks, and thoughts from the author known as S0AndS0
 
 
