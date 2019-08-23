@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Node Actions"
+title: "Node Inputs"
 date: 2019-08-22 14:58:05 -0700
-categories: gha github actions node
+categories: gha github actions inputs node
 ---
 
 
