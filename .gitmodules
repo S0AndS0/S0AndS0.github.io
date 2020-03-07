@@ -22,3 +22,7 @@
 	path = assets/javascript/modules/browser-storage
 	url = https://github.com/javascript-utilities/browser-storage.git
 	branch = master
+[submodule "includes-translate"]
+	path = _includes/modules/includes-translate
+	url = https://github.com/liquid-utilities/includes-translate.git
+	branch = master

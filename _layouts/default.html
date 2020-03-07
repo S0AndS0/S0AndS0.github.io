@@ -13,6 +13,7 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+        {% include modules/includes-translate/includes-translate.html %}
         {{ content }}
         {% if page.twitter-timeline %}
           {% include modules/twitter-timeline/twitter-timeline.html %}
