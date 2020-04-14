@@ -58,6 +58,12 @@ collections:
   python:
     output: true
     permalink: /:collection/:name/
+  rust:
+    output: true
+    permalink: /:collection/:name/
+  scripting:
+    output: true
+    permalink: /:collection/:name/
 
 include:
   - .github/

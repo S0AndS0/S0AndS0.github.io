@@ -1,0 +1,9 @@
+---
+layout: modules/feed-rss2/feed-rss2
+title: "Rust Tips"
+collection_name: rust
+collection_home: /rust/
+date: 2020-04-14 13:58:05 -0700
+content_type: xhtml
+permalink: /:collection/:name:output_ext
+---
