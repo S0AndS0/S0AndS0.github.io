@@ -43,6 +43,9 @@ collections:
   bash:
     output: true
     permalink: /:collection/:name/
+  css:
+    output: true
+    permalink: /:collection/:name/
   gha:
     output: true
     permalink: /:collection/:name/
