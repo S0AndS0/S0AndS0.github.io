@@ -1,0 +1,9 @@
+---
+layout: modules/feed-rss2/feed-rss2
+title: "CSS Tips"
+collection_name: css
+collection_home: /css/
+date: 2020-05-05 13:58:05 -0700
+content_type: xhtml
+permalink: /:collection/:name:output_ext
+---
