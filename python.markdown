@@ -1,6 +1,6 @@
 ---
 layout: modules/collection-home/collection-home
-collection_name: awk
+collection_name: python
 list_title: Even more examples
 title: "Python Tips"
 date: 2019-08-12 15:58:05 -0700
