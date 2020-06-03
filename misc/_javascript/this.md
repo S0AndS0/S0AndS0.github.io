@@ -270,7 +270,118 @@ While possible to use Arrow Functions with `this` doing so is not advised, becau
 ------
 
 
-So far most of the uses I use `this` for have been covered, however, there are more tricks that `this` can do. Pull Requests are certainly welcome if any of the above is incorrect or could be better worded. For more advanced examples the links within the [Attribution][heading__attribution] section of this document may be worthwhile to review.
+So far most of the cases I use `this` for have been covered, however, there are more tricks that `this` can do. Pull Requests are certainly welcome if any of the above is incorrect or could be better worded. For more advanced examples the links within the [Attribution][heading__attribution] section of this document may be worthwhile to review.
+
+
+One more example for this post, here's one way that JavaScript could organize metadata about employees and shared functions to operate on said data...
+
+
+First let's define a `class` that will structure the data and methods that will be useful to operate on the data regardless of employee...
+
+
+```javascript
+class Employee {
+  /**
+   * @param {string} name - name of employee
+   * @param {string} dob - year-month-day Date of Birth
+   * @param {number} hourly_wage - amount paid per hour
+   */
+  constructor(name, dob, hourly_wage) {
+    this.hourly_wage = hourly_wage;
+    this.dob = new Date(dob.split('-').map((value, index) => {
+      // JavaScript months are 0 indexed, hence why for map and join
+      if (index === 1) {
+        return Number(value) - 1;
+      }
+      return Number(value);
+    }).join('-'));
+  }
+
+  /**
+   * @returns {number}
+   */
+  ageInYears() {
+    const now = new Date();
+    return now.getFullYear() - this.dob.getFullYear();
+  }
+
+  /**
+   * @param {number} hours_worked - number of hours employee worked
+   * @throws {TypeError} - if hours_worked is not a number
+   * @returns {number}
+   */
+  wageFromHours(hours_worked) {
+    if (isNaN(hours_worked)) {
+      throw new TypeError('hours_worked is Not a Number');
+    }
+    return this.hourly_wage * hours_worked;
+  }
+}
+```
+
+
+... Next we can make a collection of employees...
+
+
+```javascript
+const employees = {
+  bill: new Employee('Bill S, Preston ESQ', '1971-12-24', 7.5),
+  joan: new Employee('Joan of Arc', '1431-05-30', 12.42),
+  liz: new Employee('Elizabeth of York', '1466-02-11', 11.95),
+  ted: new Employee('Ted Theodore Logan', '1969-01-06', 5.3),
+};
+```
+
+
+... and assuming that each employee is paid a 40 hour salary, it is possible to utilize JavaScript to ask wage related questions and collect answers...
+
+
+```javascript
+// Assuming everyone works 40 hours
+const weekly_wages = Object.entries(employees).reduce((accumulator, [key, employee]) => {
+  accumulator[key] = employee.wageFromHours(40);
+  return accumulator;
+}, {});
+
+
+const total_obligation = Object.entries(weekly_wages).reduce((accumulator, [key, wage]) => {
+  return accumulator + wage;
+}, 0);
+
+
+console.log('Bill is owed', weekly_wages['bill']); //> 300
+console.log('Joan is owed', weekly_wages['joan']); //> 496.8
+console.log('Liz is owed', weekly_wages['liz']);   //> 478
+console.log('Ted is owed', weekly_wages['ted']);   //> 212
+
+console.log("Employer's total obligation", total_obligation);
+//> 1486.8
+```
+
+
+... and it is also possible to apply functions over a collection of employees, such as obtaining who has birthdays within this month...
+
+
+```javascript
+function collectBirthdays(employees) {
+  const now = new Date();
+  return Object.entries(employees).reduce((accumulator, [key, employee]) => {
+    if (now.getMonth() === employee.dob.getMonth()) {
+      accumulator[key] = employee.dob;
+    }
+    return accumulator;
+  }, {});
+}
+
+
+const months_birthdays = collectBirthdays(employees);
+```
+
+
+The JavaScript interpreter is able to keep each employee's date of birth, hourly wage, and other data independent of each-other, because `this` is a separate execution context for each new employee.
+
+
+___
 
 
 ## Attribution
