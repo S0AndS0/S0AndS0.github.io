@@ -3,7 +3,7 @@ layout: post
 title: This
 date: 2020-06-02 17:43:05 -0700
 categories: posts
-excerpt: Examples and a bit of history about `this` keyword in JavaScript
+description: Examples and a bit of history about `this` keyword in JavaScript
 ---
 
 
