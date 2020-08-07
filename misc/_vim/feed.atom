@@ -1,0 +1,9 @@
+---
+layout: modules/feed-atom/feed-atom
+title: "Vim Tips"
+collection_name: vim
+collection_home: /vim/
+date: 2020-08-07 13:58:05 -0700
+content_type: xhtml
+permalink: /:collection/:name:output_ext
+---

@@ -67,6 +67,10 @@ collections:
   scripting:
     output: true
     permalink: /:collection/:name/
+  vim:
+    output: true
+    permalink: /:collection/:name/
+
 
 include:
   - .github/
