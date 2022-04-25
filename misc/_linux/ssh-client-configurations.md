@@ -52,8 +52,7 @@ man -P 'less -ip "<TOPIC>"' ssh_config
 
 
 ## Defaults for all connections
-[heading__defaults_for_all_connections]:
-  #defaults-for-all-connections
+[heading__defaults_for_all_connections]: #defaults-for-all-connections
 
 
 ```sshconfig
@@ -71,8 +70,7 @@ ______
 
 
 ## Prefix configuration with trailing glob
-[heading__prefix_configuration_with_trailing_glob]:
-  #prefix-configuration-with-trailing-glob
+[heading__prefix_configuration_with_trailing_glob]: #prefix-configuration-with-trailing-glob
 
 
 ```sshconfig
@@ -102,8 +100,7 @@ ______
 
 
 ## Suffix configuration with leading glob
-[heading__suffix_configuration_with_leading_glob]:
-  #suffix-configuration-with-leading-glob
+[heading__suffix_configuration_with_leading_glob]: #suffix-configuration-with-leading-glob
 
 
 ```sshconfig
