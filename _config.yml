@@ -55,6 +55,9 @@ collections:
   javascript:
     output: true
     permalink: /:collection/:name/
+  linux:
+    output: true
+    permalink: /:collection/:name/
   projects:
     output: true
     permalink: /:collection/:name/
