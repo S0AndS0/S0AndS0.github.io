@@ -2,3 +2,16 @@
 
 ## Vim
 *.swp
+*.swo
+
+## Development
+dev
+.env
+
+## Docker Compose
+docker-volumes
+
+### Jekyll
+_site
+.sass-cache/
+.jekyll-metadata
