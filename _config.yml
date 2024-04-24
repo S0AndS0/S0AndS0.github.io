@@ -93,8 +93,13 @@ include:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - .env/
+  - dev/
   - Gemfile
   - Gemfile.lock
+  - docker-compose
+  - docker-compose.yaml
+  - docker-volumes
   - node_modules
   - vendor/bundle/
   - vendor/cache/
