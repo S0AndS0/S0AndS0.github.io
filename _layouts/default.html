@@ -1,4 +1,5 @@
 {% comment %}
+  vim: filetype=liquid.html
   Source: https://raw.githubusercontent.com/jekyll/minima/v2.5.0/_layouts/default.html
   License: MIT
 {% endcomment %}
@@ -15,9 +16,6 @@
       <div class="wrapper">
         {% include modules/includes-translate/includes-translate.html %}
         {{ content }}
-        {% if page.twitter-timeline %}
-          {% include modules/twitter-timeline/twitter-timeline.html %}
-        {% endif %}
       </div>
     </main>
 

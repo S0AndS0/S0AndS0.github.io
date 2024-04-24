@@ -1,7 +1,3 @@
-[submodule "twitter-timeline"]
-	path = _includes/modules/twitter-timeline
-	url = https://github.com/liquid-utilities/twitter-timeline.git
-	branch = master
 [submodule "feed-atom"]
 	path = _layouts/modules/feed-atom
 	url = https://github.com/liquid-utilities/feed-atom.git
