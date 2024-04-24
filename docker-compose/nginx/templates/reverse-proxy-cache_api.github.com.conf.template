@@ -1,0 +1,32 @@
+# vim: filetype=nginx
+
+# Use cache path we have permissions for writing to within Docker
+proxy_cache_path /tmp/nginx-cache/api.github.com levels=1:2 keys_zone=api.github.com:60m;
+
+server {
+	server_name api.github.com;
+	listen ${NGINX_LISTEN_PORT};
+
+	# access_log /var/log/nginx/api.github.com-access.log;
+	# error_log /var/log/nginx/api.github.com-error.log;
+
+	##
+	# Fix errors involving
+	#
+	#     *1 upstream sent too big header while reading response header from upstream
+	proxy_busy_buffers_size 512k;
+	proxy_buffers 4 512k;
+	proxy_buffer_size 256k;
+
+	location / {
+		resolver 8.8.8.8;
+		proxy_pass https://api.github.com;
+		proxy_cache api.github.com;
+		proxy_cache_valid 200 302 1d;
+		proxy_ignore_headers Expires Cache-Control Set-Cookie X-Accel-Redirect X-Accel-Expires;
+		proxy_cache_use_stale error timeout invalid_header updating http_500 http_502 http_503 http_504;
+
+		proxy_set_header User-Agent ${GITHUB_USER_NAME};
+		proxy_set_header Authorization "Token ${GITHUB_AUTH_TOKEN}";
+	}
+}

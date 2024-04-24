@@ -1,0 +1,86 @@
+# version: '2'
+
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    container_name: service-jekyll
+    command: jekyll serve --watch --force_polling --verbose --trace --incremental
+    # command: jekyll serve --watch --force_polling --verbose --trace
+
+    depends_on:
+      - nginx
+
+    volumes:
+      - .:/srv/jekyll
+      - ./docker-volumes/jekyll/bundle:/usr/local/bundle
+
+    environment:
+      ## Downgrade to non-SSL
+      - PAGES_API_URL=http://api.github.com
+      ## Sorta works if NGINX played along
+      # - PAGES_API_URL=http://host-nginx
+
+    extra_hosts:
+      - api.github.com:172.21.0.2
+      - github.com:172.21.0.2
+
+    hostname: host-jekyll
+    networks:
+      - net-jekyll
+      - net-services
+
+    ports:
+      - 4000:4000
+
+  nginx:
+    image: nginx:stable-alpine
+    container_name: service-nginx
+    command: [nginx-debug, '-g', 'daemon off;']
+
+    volumes:
+      - ./docker-compose/nginx/templates:/etc/nginx/templates:ro
+      - ./docker-volumes/nginx/conf.d:/etc/nginx/conf.d
+      - ./docker-volumes/nginx/cache:/tmp/nginx-cache
+      - ./docker-volumes/nginx/run:/var/run
+      - ./docker-volumes/nginx/logs:/var/logs/nginx
+
+    env_file:
+      - path: ./.env/nginx.env
+        required: true
+
+    ports:
+      - 80:8080
+      - 443:8080
+
+    expose:
+      - '80'
+      - '443'
+
+    hostname: host-nginx
+
+    networks:
+      - net-nginx
+      - net-services
+
+networks:
+  net-jekyll:
+    name: net-jekyll
+    driver: bridge
+
+  net-nginx:
+    name: net-nginx
+    driver: bridge
+
+  ## Network over which services may chatter to each other over
+  net-services:
+    name: net-services
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/16
+          ip_range: 172.21.0.0/24
+          gateway: 172.21.0.1
+          aux_addresses:
+            host-nginx: 172.21.0.2
+            host-jekyll: 172.21.0.3
+
