@@ -17,9 +17,20 @@ title: S0AndS0
 description: >- # this means to ignore newlines until "baseurl:"
   Miscellaneous tips, tricks, and thoughts from the author known as S0AndS0
 # baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: 'https://s0ands0.github.io'
-author: S0AndS0
+
+github_username: S0AndS0
+linkedin_username: s0ands0
 twitter_username: S0_And_S0
+mastodon:
+  - username: S0AndS0
+    instance: mastodon.social
+
+##
+# Make docker happy with metadata plugin
+# https://github.com/jekyll/jekyll/issues/4705
+repository: S0AndS0/S0AndS0.github.io
 
 # Build settings
 markdown: kramdown
@@ -27,11 +38,6 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
-
-
-# minima:
-#   social_links:
-#     twitter: S0_And_S0
 
 
 ## Thanks be to - https://jekyllrb.com/docs/collections/
