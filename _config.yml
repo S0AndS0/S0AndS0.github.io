@@ -89,6 +89,20 @@ attribution:
   class_prefix: attribution
   auto_font_awesome: true
 
+social_comment:
+  title: Got something to say about that?
+  class_prefix: social_comment
+  auto_font_awesome: true
+
+##
+# SEO (Search Engine Optimizations)
+# https://jekyll.github.io/jekyll-seo-tag/usage/
+# title:
+# description:
+# url:
+tagline: Technical tips
+# logo: assets/images/logo.png
+
 include:
   - .github/
 
@@ -104,6 +118,7 @@ exclude:
   - docker-compose.yaml
   - docker-volumes
   - node_modules
+  - scripts/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/

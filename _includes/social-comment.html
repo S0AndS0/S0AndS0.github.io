@@ -1,0 +1,106 @@
+{% capture workspace__social_comment %}
+	{% comment %}
+		---
+		vim: filetype=liquid.html
+		---
+
+		Social Comment
+		Copyright (C) 2024  S0AndS0
+
+		This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU Affero General Public License as published
+		by the Free Software Foundation; version 3 of the License.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU Affero General Public License for more details.
+
+		You should have received a copy of the GNU Affero General Public License
+		along with this program.  If not, see <https://www.gnu.org/licenses/>.
+	{% endcomment %}
+
+	{% comment %}
+		## Example usage
+
+		- `_config.yml`
+
+		```yaml
+		social_comment:
+			title: Got something to say about that?
+			class_prefix: social_comment
+			auto_font_awesome: true
+		```
+
+		- `_posts/2024-04-25-example-social-comment.md`
+
+		```markdown
+		---
+		title: Example of using social comment Liquid includes
+		social_comment:
+			links:
+				- text: Twitter
+					href: https://twitter.com/i/web/status/1160681002328420352
+					title: Link to Tweet thread
+					rel: nofollow noreferrer
+		---
+
+		Some content
+		```
+	{% endcomment %}
+	{% if page.social_comment %}
+	{% assign social_comment__class_prefix = page.social_comment.class_prefix | default: site.social_comment.class_prefix | default: 'social_comment' %}
+	{% assign social_comment__auto_font_awesome = page.social_comment.auto_font_awesome | default: site.social_comment.auto_font_awesome | default: nil %}
+
+	{% assign social_comment__heading_title = page.social_comment.title | default: site.social_comment.title | default: nil %}
+	{% if social_comment__heading_title %}
+		<h2 class="{{ social_comment__class_prefix }}__heading"
+				id="heading__{{ social_comment__class_prefix }}"
+				>{{ social_comment__heading_title }}
+		</h2>
+	{% endif %}
+
+	<ul class="{{ social_comment__class_prefix }}__list">
+		{% for social_comment_link in page.social_comment.links %}
+			{% assign social_comment__link_href = social_comment_link.href | default: social_comment_link.url | default: nil %}
+			{% unless social_comment__link_href %}{% continue %}{% endunless %}
+
+			{% assign social_comment__link_text = social_comment_link.text | default: nil %}
+			{% assign social_comment__link_title = social_comment_link.title | default: nil %}
+			{% assign social_comment__link_rel = social_comment_link.rel | default: 'nofollow noreferrer' %}
+
+			{% if social_comment_link.class %}
+				{% capture social_comment__link_class %}{{ social_comment_link.class }} {{ social_comment__class_prefix }}__link{% endcapture %}
+			{% elsif social_comment__auto_font_awesome %}
+				{% assign url_domain = social_comment__link_href | split: '://' | last | split: '.' | first %}
+				{% if url_domain %}
+					{% capture social_comment__link_class %}fa fa-{{ url_domain }} {{ social_comment__class_prefix }}__link{% endcapture %}
+				{% endif %}
+				{% assign url_domain = nil %}
+			{% else %}
+				{% assign social_comment__link_class = '{{ social_comment__class_prefix }}__link' %}
+			{% endif %}
+
+			{% if social_comment__link_href %}
+				<li class="{{ social_comment__class_prefix }}__item">
+					<a href="{{ social_comment__link_href }}"
+						 {% if social_comment__link_title %} title="{{ social_comment__link_title }}"{% endif %}
+						 class="{{ social_comment__link_class }}"
+						 rel="{{ social_comment__link_rel }}">
+						{% if social_comment__link_text %}{{ social_comment__link_text }}{% endif %}
+					</a>
+				</li>
+			{% endif %}
+
+			{% assign social_comment__link_href = nil %}
+			{% assign social_comment__link_text = nil %}
+			{% assign social_comment__link_title = nil %}
+			{% assign social_comment__link_rel = nil %}
+			{% assign social_comment__link_class = nil %}
+		{% endfor %}
+	</ul>
+
+	{% assign social_comment__class_prefix = nil %}
+	{% assign social_comment__auto_font_awesome = nil %}
+	{% endif %}
+{% endcapture %}{%- if workspace__social_comment -%}{{ workspace__social_comment | strip_newlines | strip }}{% assign workspace__social_comment = nil %}{%- endif -%}
