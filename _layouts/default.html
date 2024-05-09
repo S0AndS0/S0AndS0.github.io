@@ -14,7 +14,9 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        {% include modules/includes-translate/includes-translate.html %}
+        {%- if jekyll.environment == 'production' -%}
+          {%- include modules/includes-translate/includes-translate.html -%}
+        {%- endif -%}
         {{ content }}
       </div>
     </main>
