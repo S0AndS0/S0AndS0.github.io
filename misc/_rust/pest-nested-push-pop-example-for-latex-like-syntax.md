@@ -8,11 +8,19 @@ time_to_live: 1800
 tags: [ rust, pest, parsing, latex ]
 image: assets/images/rust/pest-nested-push-pop-example-for-latex-like-syntax/first-code-block.png
 
-# social_comment:
-#   links:
-#     - text: Twitter
-#       href: https://twitter.com/i/web/status/<TBD>
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_nested-pushpop-example-for-latex-like-activity-7198469051004645376-CUge
+      title: Link to Post thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/112476077715689897
+      title: Link to Toot thread for this post
+
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1792703310908334248
+      title: Link to Tweet thread for this post
 
 attributions:
   - text: Pest Book -- Syntax of pest grammars -- The stack (WIP)
