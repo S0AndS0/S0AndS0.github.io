@@ -22,14 +22,15 @@ social_comment:
       href: https://x.com/S0_And_S0/status/1792703310908334248
       title: Link to Tweet thread for this post
 
-attributions:
-  - text: Pest Book -- Syntax of pest grammars -- The stack (WIP)
-    href: https://pest.rs/book/grammars/syntax.html?highlight=rust%20string#the-stack-wip
-    title: Example of parsing Rust string literal blocks of text
+attribution:
+  links:
+    - text: Pest Book -- Syntax of pest grammars -- The stack (WIP)
+      href: https://pest.rs/book/grammars/syntax.html?highlight=rust%20string#the-stack-wip
+      title: Example of parsing Rust string literal blocks of text
 
-  - text: Pest Discussions -- `778` -- Matching inner blocks with PUSH and POP
-    href: https://github.com/pest-parser/pest/discussions/778
-    title: The question that inspired this blog post exploring the Pest stack
+    - text: Pest Discussions -- `778` -- Matching inner blocks with PUSH and POP
+      href: https://github.com/pest-parser/pest/discussions/778
+      title: The question that inspired this blog post exploring the Pest stack
 ---
 
 
