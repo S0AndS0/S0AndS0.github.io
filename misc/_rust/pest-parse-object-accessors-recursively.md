@@ -9,11 +9,11 @@ time_to_live: 1800
 tags: [ rust, pest, parsing ]
 image: assets/images/rust/pest-parse-object-accessors-recursively/first-code-block.png
 
-# social_comment:
-#   links:
-#     - text: Twitter
-#       href: 
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1802140358719017193
+      title: Link to Tweet thread for this post
 
 attribution:
   links:
