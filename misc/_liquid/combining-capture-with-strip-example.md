@@ -1,6 +1,6 @@
 ---
 title: Combining `capture` with `strip` example
-description: TLDR `{% capture workspace %} <!-- some content --> {% endcapture %} {% workspace | strip %}`
+description: "TLDR `{% capture workspace %} <!-- some content --> {% endcapture %} {% workspace | strip %}`"
 layout: post
 date: 2019-08-16 01:10:46 +0000
 time_to_live: 1800
