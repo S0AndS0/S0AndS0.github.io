@@ -9,7 +9,7 @@ tags: [ bash, RaspberryPi ]
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1161536513060065281
+      href: https://x.com/i/web/status/1161536513060065281
       title: Link to Tweet thread for this post
 
 ---

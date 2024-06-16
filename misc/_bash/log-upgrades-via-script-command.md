@@ -10,7 +10,7 @@ image: assets/images/bash/log-upgrades-via-script-command/first-code-block.png
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1160793269166473216
+      href: https://x.com/i/web/status/1160793269166473216
       title: Link to Tweet thread for this post
 ---
 

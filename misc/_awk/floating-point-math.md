@@ -10,7 +10,7 @@ image: assets/images/awk/floating-point-math/first-code-block.png
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1160694008542191616
+      href: https://x.com/i/web/status/1160694008542191616
       title: Link to Tweet thread for this post
 ---
 

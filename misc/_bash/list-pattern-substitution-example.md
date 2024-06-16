@@ -10,7 +10,7 @@ image: assets/images/bash/list-pattern-substitution-example/first-code-block.png
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1161759789044518913
+      href: https://x.com/i/web/status/1161759789044518913
       title: Link to Tweet thread for this post
 ---
 

@@ -10,7 +10,7 @@ image: assets/images/git/submodule-example-for-github-pages/first-code-block.png
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1160808914138435584
+      href: https://x.com/i/web/status/1160808914138435584
       title: Link to Tweet thread for this post
 
 attribution:

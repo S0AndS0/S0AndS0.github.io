@@ -10,7 +10,7 @@ image: assets/images/bash/sanitize-input-string/first-code-block.png
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1160704106861715458
+      href: https://x.com/i/web/status/1160704106861715458
       title: Link to Tweet thread for this post
 ---
 

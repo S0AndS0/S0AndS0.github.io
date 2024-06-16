@@ -10,7 +10,7 @@ image: assets/images/awk/hello-world-in-pure-awk/first-code-block.png
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1161322965947973632
+      href: https://x.com/i/web/status/1161322965947973632
       title: Link to Tweet thread for this post
 ---
 

@@ -10,7 +10,7 @@ image: assets/images/bash/heredoc-to-variable-via-read/first-code-block.png
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1161159417934438405
+      href: https://x.com/i/web/status/1161159417934438405
       title: Link to Tweet thread for this post
 ---
 

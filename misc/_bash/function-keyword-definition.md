@@ -10,7 +10,7 @@ image: assets/images/bash/function-keyword-definition/first-code-block.png
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1162441868803624960
+      href: https://x.com/i/web/status/1162441868803624960
       title: Link to Tweet thread for this post
 ---
 

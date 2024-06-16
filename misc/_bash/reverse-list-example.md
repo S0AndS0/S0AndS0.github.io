@@ -10,7 +10,7 @@ image: assets/images/bash/reverse-list-example/first-code-block.png
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1162999980799320065
+      href: https://x.com/i/web/status/1162999980799320065
       title: Link to Tweet thread for this post
 ---
 

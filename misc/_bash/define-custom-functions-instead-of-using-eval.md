@@ -10,7 +10,7 @@ image: assets/images/bash/define-custom-functions-instead-of-using-eval/first-co
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1162154283258662913
+      href: https://x.com/i/web/status/1162154283258662913
       title: Link to Tweet thread for this post
 ---
 

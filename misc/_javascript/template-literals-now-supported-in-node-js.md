@@ -9,7 +9,7 @@ image: assets/images/javascript/template-literals-now-supported-in-node-js/first
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1160964554425131008
+      href: https://x.com/i/web/status/1160964554425131008
       title: Link to Tweet thread for this post
 ---
 

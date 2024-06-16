@@ -10,7 +10,7 @@ image: assets/images/awk/pattern-match-against-variable-value/first-code-block.p
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1162450960049774592
+      href: https://x.com/i/web/status/1162450960049774592
       title: Link to Tweet thread for this post
 ---
 

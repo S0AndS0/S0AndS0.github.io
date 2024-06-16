@@ -11,7 +11,7 @@ image: assets/images/projects/paranoid-linux-adaptive-iptables-announcement/firs
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1161152517129904128
+      href: https://x.com/i/web/status/1161152517129904128
       title: Link to Tweet thread for this post
 
 attribution:

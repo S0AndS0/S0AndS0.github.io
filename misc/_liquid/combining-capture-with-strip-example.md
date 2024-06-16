@@ -10,7 +10,7 @@ image: assets/images/liquid/combining-capture-with-strip-example/first-code-bloc
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1162169798056243200
+      href: https://x.com/i/web/status/1162169798056243200
       title: Link to Tweet thread for this post
 ---
 

@@ -10,7 +10,7 @@ image: assets/images/bash/searching-man-via-pager/first-code-block.png
 social_comment:
   links:
     - text: Twitter
-      href: https://twitter.com/i/web/status/1160681002328420352
+      href: https://x.com/i/web/status/1160681002328420352
       title: Link to Tweet thread for this post
 ---
 
