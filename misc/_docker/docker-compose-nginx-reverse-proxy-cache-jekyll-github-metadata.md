@@ -75,14 +75,14 @@ announcements:
     href: https://www.linkedin.com/posts/s0ands0_docker-compose-nginx-reverse-proxy-cache-activity-7189048381065838592-lwsm?utm_source=share&utm_medium=member_desktop
 
   - text: Twitter
-    href: https://twitter.com/S0_And_S0/status/1783282472534389014
+    href: https://x.com/S0_And_S0/status/1783282472534389014
 ---
 
 
 The end-goal is to access GitHub API, and download Gems, in a respectful
 fashion by caching responses for a reasonable amount of time.  All while also
-reducing developer friction by reducing the resulting command required a simple
-`docker-compose up` to serve a test site locally!
+minimizing developer friction by reducing the resulting command required a
+simple `docker-compose up` to serve a test site locally!
 
 
 ______
@@ -103,7 +103,7 @@ date, then it'll download and cache those packages too.
 
 To help prevent cached artifacts, and authentication details, from being
 tracked and pushed by Git we also must update the `.gitignore` file.  Though
-readers may wish to add extra protections via a `pre-commit` hook to add
+readers may wish to implement extra protections via a `pre-commit` hook to add
 additional restrictions for tracking `.env` files.
 
 
@@ -521,4 +521,11 @@ ______
   develop, and document for you dear reader(s)...  So if it has helped ya, then
   feel free to show your [appreciation](https://liberapay.com/S0AndS0) in a way
   that'll encourage similar publications.
+
+- Moving site source code to a sub-directory may offer a cleaner developer
+  experience, and better define responsibilities for each Docker image, however
+  [Stack Overflow](https://stackoverflow.com/questions/36782467/set-subdirectory-as-website-root-on-github-pages)
+  shows a history of much flux!  GitHub Actions modifications is the latest
+  _solution_, and Git Worktree setup may be a more mature solution, but for now
+  that all be outside the scope of this guide.
 
