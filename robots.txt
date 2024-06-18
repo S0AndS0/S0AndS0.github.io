@@ -1,0 +1,41 @@
+---
+vim: filetype=sitemap.liquid
+layout: null
+sitemap: false
+
+attributions:
+  - https://github.com/jekyll/jekyll-sitemap
+  - https://www.robotstxt.org/robotstxt.html
+  - https://michaelcurrin.github.io/code-cookbook/recipes/web/seo/robots/jekyll.html
+  - https://www.cyberciti.biz/web-developer/block-openai-bard-bing-ai-crawler-bots-using-robots-txt-file/
+  - https://github.com/dmitrizzle/disallow-ai/blob/main/src/robots.txt
+  - https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/
+
+bots:
+  disallow:
+    - Amazonbot
+    - Applebot-Extended
+    - anthropic-ai
+    - Bytespider
+    - CCBot
+    - ChatGPT-User
+    - ClaudeBot
+    - cohere-ai
+    - Diffbot
+    - FacebookBot
+    - ImagesiftBot
+    - GPTBot
+    - Google-Extended
+    - Omgilibot
+    - Omgili
+    - omgili
+    - PerplexityBot
+---
+
+{% for bot in page.bots.disallow %}
+User-agent: {{ bot }}
+Disallow: /
+{% endfor %}
+
+Sitemap: {{ "sitemap.xml" | absolute_url }}
+
