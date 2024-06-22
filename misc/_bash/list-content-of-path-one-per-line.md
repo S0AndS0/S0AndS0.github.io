@@ -1,4 +1,4 @@
-<!-- --- -->
+---
 title: List content of path one per line
 description: TLDR `ls -1` ensures output is one directory or file per line
 layout: post
