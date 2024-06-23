@@ -19,7 +19,7 @@ social_comment:
       title: Link to Mastodon Toots for this post
 
     - text: Twitter
-      href: https://x.com/i/web/status/<ID>
+      href: https://x.com/i/web/status/1804666704099766487
       title: Link to Tweet thread for this post
 
 attribution:
