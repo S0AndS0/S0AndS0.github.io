@@ -4,15 +4,23 @@ description: Compare more complex CI/CD configurations defined for Travis CI vs 
 layout: post
 date: 2019-10-13 13:30:05 -0700
 time_to_live: 1800
-tags: [ github, javascript ]
+tags: [ cicd, github, javascript ]
 categories: github actions docker
 image: assets/images/gha/into-the-deep-end/first-code-block.png
 
-# social_comment:
-#   links:
-#     - text: Twitter
-#       href: https://x.com/i/web/status/<ID>
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_into-the-deep-end-activity-7210431294697070592-q9sF
+      title: Link to LinkedIn thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/112662989463577720
+      title: Link to Mastodon Toots for this post
+
+    - text: Twitter
+      href: https://x.com/i/web/status/<ID>
+      title: Link to Tweet thread for this post
 
 attribution:
   links:
