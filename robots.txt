@@ -1,41 +1,71 @@
 ---
-vim: filetype=sitemap.liquid
+vim: filetype=liquid.robots expandtab
 layout: null
 sitemap: false
 
 attributions:
-  - https://github.com/jekyll/jekyll-sitemap
-  - https://www.robotstxt.org/robotstxt.html
-  - https://michaelcurrin.github.io/code-cookbook/recipes/web/seo/robots/jekyll.html
-  - https://www.cyberciti.biz/web-developer/block-openai-bard-bing-ai-crawler-bots-using-robots-txt-file/
+  - https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt
   - https://github.com/dmitrizzle/disallow-ai/blob/main/src/robots.txt
+  - https://github.com/jekyll/jekyll-sitemap
+  - https://michaelcurrin.github.io/code-cookbook/recipes/web/seo/robots/jekyll.html
   - https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/
+  - https://rknight.me/blog/perplexity-ai-is-lying-about-its-user-agent/
+  - https://search.google.com/search-console/about
+  - https://www.cyberciti.biz/robots.txt
+  - https://www.cyberciti.biz/web-developer/block-openai-bard-bing-ai-crawler-bots-using-robots-txt-file/
+  - https://www.robotstxt.org/robotstxt.html
 
 bots:
+  allow:
+    - Mediapartners-Google
+
   disallow:
+    - AdsBot-Google
+    - AhrefsBot
     - Amazonbot
     - Applebot-Extended
-    - anthropic-ai
     - Bytespider
     - CCBot
     - ChatGPT-User
+    - Claude-Web
     - ClaudeBot
-    - cohere-ai
     - Diffbot
     - FacebookBot
-    - ImagesiftBot
+    - FriendlyCrawler
     - GPTBot
     - Google-Extended
-    - Omgilibot
+    - GoogleOther
+    - ImagesiftBot
     - Omgili
-    - omgili
+    - Omgilibot
     - PerplexityBot
+    - Pintrestbot
+    - Semrush
+    - SemrushBot
+    - YouBot
+    - YouBot
+    - anthropic-ai
+    - cohere-ai
+    - dotbot
+    - img2dataset
+    - omgili
+    - omgilibot
+    - peer39_crawler
+    - peer39_crawler/1.0
 ---
+
+{% for bot in page.bots.allow %}
+User-agent: {{ bot }}
+Allow: /
+{% endfor %}
 
 {% for bot in page.bots.disallow %}
 User-agent: {{ bot }}
 Disallow: /
 {% endfor %}
+
+User-agent: *
+Disallow: /assets/ai/bait.zip
 
 Sitemap: {{ "sitemap.xml" | absolute_url }}
 
