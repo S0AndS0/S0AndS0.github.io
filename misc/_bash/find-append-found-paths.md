@@ -8,11 +8,19 @@ author: S0AndS0
 tags: [ bash, find, linux ]
 image: assets/images/bash/find-append-found-paths/first-code-block.png
 
-# social_comment:
-#   links:
-#     - text: Twitter
-#       href: https://x.com/i/web/status/<ID>
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_find-append-found-paths-activity-7217980340156416001-O388
+      title: Link to LinkedIn thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/112780942617043321
+      title: Link to Mastodon Toots for this post
+
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1812214633052438875
+      title: Link to Tweet thread for this post
 
 # attribution:
 #   links:
