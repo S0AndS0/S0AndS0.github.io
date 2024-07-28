@@ -9,19 +9,19 @@ author: S0AndS0
 tags: [ javascript, typescript ]
 image: assets/images/javascript/obliterate-event-listeners/first-code-block.png
 
-# social_comment:
-#   links:
-#     - text: LinkedIn
-#       href: 
-#       title: Link to LinkedIn thread for this post
-# 
-#     - text: Mastodon
-#       href: 
-#       title: Link to Toot thread for this post
-# 
-#     - text: Twitter
-#       href: 
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_obliterate-event-listeners-activity-7223476264416755712-_7ae
+      title: Link to LinkedIn thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0
+      title: Link to Toot thread for this post
+
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1817710543148556487
+      title: Link to Tweet thread for this post
 
 attribution:
   links:
