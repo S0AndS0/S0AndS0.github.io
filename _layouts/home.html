@@ -1,0 +1,106 @@
+---
+vim: filetype=liquid.html expandtab
+layout: default
+Source: https://raw.githubusercontent.com/jekyll/minima/v2.5.1/_layouts/home.html
+License: MIT
+---
+{% capture workspace__layout__home %}
+  {% assign workspace__layout__home__default_paths = site.pages | map: "path" %}
+  {% assign workspace__layout__home__page_paths = site.header_pages | default: workspace__layout__home__default_paths %}
+  {% assign collection__posts__limit = 3 %}
+  {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+
+  {% if workspace__layout__home__page_paths %}
+    <div class="home">
+      {% if page.title %}
+        <h1 class="pageheading">{{ page.title }}</h1>
+      {% endif %}
+
+      {{ content }}
+
+      {% for workspace__layout__home__path in workspace__layout__home__page_paths %}
+        {% capture workspace__layout__home__collection %}
+          {% assign has_output = false %}
+          {% assign has_atom_feed = false %}
+          {% assign has_rss_feed = false %}
+
+          {% assign workspace__layout__home__my_page = site.pages | where: "path", workspace__layout__home__path | first %}
+          {% if workspace__layout__home__my_page.title and workspace__layout__home__my_page.collection_name %}
+            <section>
+              <header>
+                <h2>{{ workspace__layout__home__my_page.title | escape }}</h2>
+                <strong>{{ workspace__layout__home__my_page.list_title }}</strong>
+              </header>
+
+              {% assign collection__posts = site[workspace__layout__home__my_page.collection_name] %}
+              {% if collection__posts.size %}
+                <ul class="post-list">
+                  {% assign post_count = 0 %}
+                  {% for post in collection__posts %}
+                    {% if page.relative_path == post.relative_path %}
+                      {% continue %}
+                    {% elsif post.ext == '.xml' or post.ext == '.rss' %}
+                      {% assign has_rss_feed = true %}
+                      {% assign feed_rss_url = post.url %}
+                      {% continue %}
+                    {% elsif post.ext == '.atom' %}
+                      {% assign has_atom_feed = true %}
+                      {% assign feed_atom_url = post.url %}
+                      {% continue %}
+                    {% elsif post.ext == '.json' %}
+                      {% if post.slug == 'feed' or post.slug == page.collection_name %}
+                        {% assign has_json_feed = true %}
+                        {% assign feed_json_url = post.url %}
+                      {% endif %}
+                      {% continue %}
+                    {% endif %}
+                    {% assign has_output = true %}
+
+                    {% assign post_count = post_count | plus: 1 %}
+                    {% if post_count > collection__posts__limit %}
+                      {% continue %}
+                    {% endif %}
+
+                    <li>
+                      <h3>
+                        <a class="post-link" href="{{ post.url | relative_url }}">
+                          {{ post.title | escape }}
+                        </a>
+                      </h3>
+                      {% if post.description %}
+                        <blockquote>
+                          <span class="post-meta">{{ post.date | date: date_format }}</span>
+                          <br>
+                          {{ post.description | markdownify | remove: '<p>' | remove: '</p>' }}
+                        </blockquote>
+                      {% elsif site.show_excerpts and post.excerpt %}
+                        <blockquote>
+                          <span class="post-meta">{{ post.date | date: date_format }}</span>
+                          <br>
+                          {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+                        </blockquote>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+
+                {% assign read_more_count = post_count | minus: collection__posts__limit %}
+                {% if read_more_count > 0 %}
+                  <a class="pagelink" href="{{ workspace__layout__home__my_page.url | relative_url }}">
+                    ... and {{ read_more_count }} more available to read!
+                  </a>
+                {% endif %}
+              {% endif %}
+            </section>
+          {% endif %}
+
+          {% unless forloop.last %}
+            <hr>
+            <br>
+          {% endunless %}
+        {% endcapture %}
+        {% if has_output %}{{ workspace__layout__home__collection | strip_newlines | strip }}{% assign workspace__layout__home__collection = nil %}{% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endcapture %}{%- if workspace__layout__home -%}{{ workspace__layout__home | strip_newlines | strip }}{% assign workspace__layout__home = nil %}{%- endif -%}
