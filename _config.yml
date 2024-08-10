@@ -74,6 +74,9 @@ collections:
   linux:
     output: true
     permalink: /:collection/:name/
+  posts:
+    output: true
+    permalink: /:collection/:name/
   projects:
     output: true
     permalink: /:collection/:name/
