@@ -7,7 +7,7 @@ date: 2024-06-28 19:27:28 -0700
 time_to_live: 1800
 author: S0AndS0
 tags: [ ai, cicd, docker, github, ml  ]
-image: assets/images/projects/gha-utilities/ai-bait/first-code-block.png
+image: assets/images/projects/gha-utilities-ai-bait/first-code-block.png
 
 social_comment:
   links:
