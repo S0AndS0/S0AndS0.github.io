@@ -35,6 +35,10 @@ repository: S0AndS0/S0AndS0.github.io
 # Build settings
 markdown: kramdown
 theme: minima
+
+minima:
+  date_format: "%F %T"
+
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
