@@ -9,19 +9,19 @@ author: S0AndS0
 tags: [ regexp, vim ]
 image: assets/images/vim/regexp-match-programming-case-conventions/first-code-block.png
 
-# social_comment:
-#   links:
-#     - text: LinkedIn
-#       href: 
-#       title: Link to LinkedIn thread for this post
-# 
-#     - text: Mastodon
-#       href: 
-#       title: Link to Mastodon Toots for this post
-# 
-#     - text: Twitter
-#       href: 
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_regexp-match-programming-case-conventions-activity-7239048060335513600-kzJI
+      title: Link to LinkedIn thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/113110125610459781
+      title: Link to Mastodon Toots for this post
+
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1833282309090644177
+      title: Link to Tweet thread for this post
 ---
 
 ## TLDR
