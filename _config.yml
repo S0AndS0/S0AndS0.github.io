@@ -86,6 +86,9 @@ collections:
   rust:
     output: true
     permalink: /:collection/:name/
+  scammers:
+    output: true
+    permalink: /:collection/:name/
   scripting:
     output: true
     permalink: /:collection/:name/
