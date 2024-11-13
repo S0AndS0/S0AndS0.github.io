@@ -5,23 +5,23 @@ layout: post
 date: 2024-11-13 13:16 -0800
 time_to_live: 1800
 tags: [ scam, email, fraud ]
-# social_comment:
-#   links:
-#     - text: Blue Sky
-#       href: 
-#       title: Link to thread for this post
-#
-#     - text: LinkedIn
-#       href: 
-#       title: Link to LinkedIn thread for this post
-#
-#     - text: Mastodon
-#       href: 
-#       title: Link to Toot thread for this post
-#
-#     - text: Twitter
-#       href: 
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://bsky.app/profile/s0-and-s0.bsky.social/post/3laufpmduyc2s
+      title: Link to thread for this post
+
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_cui-from-china-activity-7262593354654236672-aOvs
+      title: Link to LinkedIn thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/113478021242216328
+      title: Link to Toot thread for this post
+
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1856827681947414948
+      title: Link to Tweet thread for this post
 ---
 
 
