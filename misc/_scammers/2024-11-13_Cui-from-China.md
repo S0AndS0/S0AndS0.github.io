@@ -38,10 +38,44 @@ If sufficient interest is shown in this sort of content, then I'll be sure to
 publish updates and maybe stuff from the considerable backlog of past attempts
 from other scammers too.
 
+
 ______
 
 
-## 2024-11-13 10:40 -- Their request
+## Contents
+
+
+- [TLDR][heading__tldr]
+- [Email thread][heading__email_thread]
+- [Got something to say about that?](#heading__social_comment)
+
+______
+
+
+## TLDR
+[heading__tldr]: #tldr
+
+
+Cui says they want to remote control my PC in order to circumvent VPN detection
+of Upwork services, as well as make use of my reputation on that platform.  In
+short, if honest, they want to commit fraud and taint my brand...  but more
+than likely it is a ploy for the remote access to devices outside their
+nation-state's boarders, and whatever may be valuable on my device too.
+
+
+______
+
+
+## Email thread
+[heading__email_thread]: #email-thread
+
+
+The next sub-sections catalog verbatim communications in order of earliest to
+latest, only edits I've mad are redacting PII of victims and adding
+formatting/metadata so it is easier to read via web-browser or text editor.
+
+
+### 2024-11-13 10:40 -- Their request
 
 ```yaml
 subject: Hello
@@ -87,10 +121,10 @@ from: JS Expert <tekken.jin0714@gmail.com>
 > Cui
 
 
-______
+---
 
 
-## 2024-11-13 13:32 -- My reply
+### 2024-11-13 13:32 -- My reply
 
 
 ```yaml
@@ -107,10 +141,10 @@ to: <tekken.jin0714@gmail.com>
 > Wishin' ya a wonderful Wednesday!
 
 
-______
+---
 
 
-## 2024-11-13 15:03 -- Their clarification
+### 2024-11-13 15:03 -- Their clarification
 
 
 ```yaml
@@ -127,10 +161,10 @@ from: <tekken.jin0714@gmail.com>
 > I just want to use your Upwork account on your real PC remotely like you are working with
 
 
-______
+---
 
 
-## 2024-11-13 16:16 -- My ask for some GitHub content to review
+### 2024-11-13 16:16 -- My ask for some GitHub content to review
 
 
 ```yaml
@@ -150,10 +184,10 @@ to: <tekken.jin0714@gmail.com>
 > Chuffed to bits in excitement for your reply!
 
 
-______
+---
 
 
-## 2024-11-13 16:27 -- Their hasty replies impersonating someone on GitHub
+### 2024-11-13 16:27 -- Their hasty replies impersonating someone on GitHub
 
 
 ```yaml
@@ -170,10 +204,10 @@ from: <tekken.jin0714@gmail.com>
 
 
 
-______
+---
 
 
-## 2024-11-13 16:35 -- My suspicions grow
+### 2024-11-13 16:35 -- My suspicions grow
 
 
 ```yaml
@@ -194,10 +228,10 @@ to: <tekken.jin0714@gmail.com>
 > Looking forward to concise clarifications!
 
 
-______
+---
 
 
-## 2024-11-13 16:45 -- Their lies deepen
+### 2024-11-13 16:45 -- Their lies deepen
 
 ```yaml
 subject: 'Re: Hello'
@@ -208,10 +242,10 @@ from: <tekken.jin0714@gmail.com>
 > Another one is my public good account
 
 
-______
+---
 
 
-## 2024-11-13 16:50 -- My quest to slay suspicions continues
+### 2024-11-13 16:50 -- My quest to slay suspicions continues
 
 
 ```yaml
@@ -229,10 +263,10 @@ to: <tekken.jin0714@gmail.com>
 > Thrilled to have a Rockstar like yourself to chat with!
 
 
-______
+---
 
 
-## 2024-11-13 16:45 -- They want to call me ... and vet my skills
+### 2024-11-13 16:45 -- They want to call me ... and vet my skills
 
 ```yaml
 subject: 'Re: Hello'
@@ -247,11 +281,16 @@ from: <tekken.jin0714@gmail.com>
 > Do you have experience in React, Vue, Angular, and Node. js?
 
 
-______
+---
 
 
-## 2024-11-13 16:58 -- My rebuttal to being asked to prove programming prowess
+### 2024-11-13 16:58 -- My rebuttal to being asked to prove programming prowess
 
+
+```yaml
+subject: 'Re: Hello'
+to: <tekken.jin0714@gmail.com>
+```
 
 > Oh a call would be nice Cui!
 > ...  But usually I require coffee before sharing my number ;-)
@@ -266,4 +305,49 @@ ______
 
 Side note; around this time is when I forwarded messages on to the owner of the
 GitHub account the scammer shared, and tagged Upwork via X/Twitter too.
+
+
+---
+
+
+### 2024-11-13 16:45 -- They claim ignorance of GPG never mind signed GitHub commits
+
+
+```yaml
+subject: 'Re: Hello'
+from: <tekken.jin0714@gmail.com>
+```
+
+> TBH, I don't know about GPG/PGP keys, so I can't do it for you.
+> Hope you understand this
+> I'm just a developer...
+>
+> so you are not interested in my suggestion, right?
+
+
+---
+
+
+### 2024-11-13 17:12 -- My restiveness is very analytical
+
+
+```yaml
+subject: 'Re: Hello'
+to: <tekken.jin0714@gmail.com>
+```
+
+> Please keep things single-treaded Cui!
+>
+>
+> I've merged your other message into this thread, but moving forward must ask
+> that ya keep things easy to search.
+>
+> Re GPG/PGP: how can I believe that when I see signed commits on GitHubs?
+>
+> Re interest: is that what I said?
+>
+>
+> Excited to move forward after formalities are finalized!
+
+---
 
