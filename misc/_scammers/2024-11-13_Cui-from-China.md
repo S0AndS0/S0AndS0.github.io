@@ -193,3 +193,77 @@ to: <tekken.jin0714@gmail.com>
 >
 > Looking forward to concise clarifications!
 
+
+______
+
+
+## 2024-11-13 16:45 -- Their lies deepen
+
+```yaml
+subject: 'Re: Hello'
+from: <tekken.jin0714@gmail.com>
+```
+
+> One is my main Google account for my business
+> Another one is my public good account
+
+
+______
+
+
+## 2024-11-13 16:50 -- My quest to slay suspicions continues
+
+
+```yaml
+subject: 'Re: Hello'
+to: <tekken.jin0714@gmail.com>
+```
+
+> I really wanna believe ya Cui!
+>
+>
+> Any chance you'd be willing and able to send confirmation from them, preferably
+> signed via your GPG/PGP key, so I can assuage my concerns?
+>
+>
+> Thrilled to have a Rockstar like yourself to chat with!
+
+
+______
+
+
+## 2024-11-13 16:45 -- They want to call me ... and vet my skills
+
+```yaml
+subject: 'Re: Hello'
+from: <tekken.jin0714@gmail.com>
+```
+
+> If you want, we can have a call for each other
+
+> btw, if you are okay, could you please show me your experience?
+> Are you familiar with web development?
+> How many years of experience do you have?
+> Do you have experience in React, Vue, Angular, and Node. js?
+
+
+______
+
+
+## 2024-11-13 16:58 -- My rebuttal to being asked to prove programming prowess
+
+
+> Oh a call would be nice Cui!
+> ...  But usually I require coffee before sharing my number ;-)
+>
+>
+> As for skills and stuff, sure I got some tech talent but ain't that a given as
+> you've already seen my GitHub contributions?
+>
+>
+> Let me know when you're ready to use PGP/GPG to reduce skittishness!
+
+
+Side note; around this time is when I forwarded messages on to the owner of the
+GitHub account the scammer shared, and tagged Upwork via X/Twitter too.
+
