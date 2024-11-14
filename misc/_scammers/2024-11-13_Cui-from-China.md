@@ -106,3 +106,46 @@ to: <tekken.jin0714@gmail.com>
 >
 > Wishin' ya a wonderful Wednesday!
 
+
+______
+
+
+## 2024-11-13 15:03 -- Their clarification
+
+
+```yaml
+subject: 'Re: Hello'
+from: <tekken.jin0714@gmail.com>
+```
+
+> No problem, I understand what you are concern about.  Okay
+>
+> If I use your Upwork account on my local, it will violate the TOS of Upwork.
+>
+> so I don't want your Upwork account creantial.
+>
+> I just want to use your Upwork account on your real PC remotely like you are working with
+
+
+______
+
+
+## 2024-11-13 16:16 -- My ask for some GitHub content to review
+
+
+```yaml
+subject: 'Re: Hello'
+to: <tekken.jin0714@gmail.com>
+```
+
+
+> Ah thanks for clarifying Cui!
+>
+> So if I understand correctly I'd violate Upwork ToS were I to use your creds or
+> you mine, but remote-ing into one another's PCs doesn't create any issues?
+>
+> As you're effectively asking to use my account, and thereby my name and brand
+> that I've built-up over no small number of years, would it be unreasonable to
+> ask for your public GitHub account where I can review some of your code?
+>
+> Chuffed to bits in excitement for your reply!
