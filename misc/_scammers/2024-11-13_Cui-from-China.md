@@ -138,7 +138,6 @@ subject: 'Re: Hello'
 to: <tekken.jin0714@gmail.com>
 ```
 
-
 > Ah thanks for clarifying Cui!
 >
 > So if I understand correctly I'd violate Upwork ToS were I to use your creds or
@@ -149,3 +148,48 @@ to: <tekken.jin0714@gmail.com>
 > ask for your public GitHub account where I can review some of your code?
 >
 > Chuffed to bits in excitement for your reply!
+
+
+______
+
+
+## 2024-11-13 16:27 -- Their hasty replies impersonating someone on GitHub
+
+
+```yaml
+subject: 'Re: Hello'
+from: <tekken.jin0714@gmail.com>
+```
+
+> I understand
+> Ok, I can send you my CV and github
+> btw, do you have other messengers like Discord and Telegram?
+> I think we can have more seamless communication through it
+
+> `https://github.com/<REDACTED>`
+
+
+
+______
+
+
+## 2024-11-13 16:35 -- My suspicions grow
+
+
+```yaml
+subject: 'Re: Hello'
+to: <tekken.jin0714@gmail.com>
+```
+
+> Wow, that was fast Cui!
+>
+>
+> Tragically I ain't cool enough for them Telegrams, and wat knots, and generally
+> prefer asynchronous communications to be easily search-able so I don't ask the
+> same question more than twice ;-)
+>
+> By chance can ya explain why you're using a different email addresses?
+>
+>
+> Looking forward to concise clarifications!
+
