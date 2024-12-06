@@ -52,7 +52,7 @@ leading to the current buffer's path.
 > - `{ _, p -> mkdir(p, 'p') }` ↔ Callback lambda for the `foreach` function
 >   call
 >
-> We must use an list-function for the `call` target because calling
+> We must use a list-function for the `call` target because calling
 > `len(<args>)` directly results in an error being thrown, and a `try`/`catch`
 > would lengthen the one-liner considerably.  Plus the `-args=?` command
 > modifier ensures only one or none arguments are allowed, so performance
