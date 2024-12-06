@@ -80,8 +80,8 @@ endfunction
 command! -nargs=? -complete=dir MakeDirectory call <SID>Mkdir(<f-args>)
 ```
 
-...  The behavior of `MakeDirectory` command will be nearly identical to that
-of `Mkdir`, only exception be calling with an explicitly empty path
+...  The behavior of `MakeDirectory` function will be nearly identical to that
+of `Mkdir`'s lambda, only exception be calling with an explicitly empty path
 (`MakeDirectory ''`) results in an error being thrown at Vim's execution layer
 instead of OS's.
 
