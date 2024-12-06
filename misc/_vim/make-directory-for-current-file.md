@@ -9,23 +9,23 @@ author: S0AndS0
 tags: [ bash, vim ]
 image: assets/images/vim/make-directory-for-current-file/first-code-block.png
 
-# social_comment:
-#   links:
-#     - text: Blue Sky
-#       href: 
-#       title: Link to BS thread for this post
-# 
-#     - text: LinkedIn
-#       href: 
-#       title: Link to LinkedIn thread for this post
-# 
-#     - text: Mastodon
-#       href: 
-#       title: Link to Mastodon Toots for this post
-# 
-#     - text: Twitter
-#       href: 
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://bsky.app/profile/s0-and-s0.bsky.social/post/3lcnqqnbjqk2u
+      title: Link to BS thread for this post
+
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_make-directory-for-current-file-activity-7270857584482414592-QpCN
+      title: Link to LinkedIn thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/113607152098058986
+      title: Link to Mastodon Toots for this post
+
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1865092139681538321
+      title: Link to Tweet thread for this post
 ---
 
 
