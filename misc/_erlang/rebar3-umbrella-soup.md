@@ -7,11 +7,20 @@ time_to_live: 1800
 author: S0AndS0
 tags: [ erlang, rebar3 ]
 image: assets/images/erlang/rebar3-umbrella-soup/first-code-block.png
-# social_comment:
-#   links:
-#     - text: Twitter
-#       href: 
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://bsky.app/profile/s0-and-s0.bsky.social/post/3liaqqsauis2s
+      title: Link to Blue Sky thread for this post
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/114010223587114988
+      title: Link to Toot thread for this post
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_rebar3-umbrella-soup-activity-7296654330537938946-GcDE
+      title: Link to LinkedIn thread for this post
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1890888545222443301
+      title: Link to Tweet thread for this post
 ---
 
 
