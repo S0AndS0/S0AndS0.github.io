@@ -9,19 +9,23 @@ author: S0AndS0
 tags: [ solidity, assembly, gas-optimizations, blockchain, evm ]
 image: assets/images/solidity/reentrancy-guard-and-assembly-deep-dive/first-code-block.png
 
-# social_comment:
-#   links:
-#     - text: LinkedIn
-#       href:
-#       title: Link to LinkedIn thread for this post
-#
-#     - text: Mastodon
-#       href:
-#       title: Link to Toot thread for this post
-#
-#     - text: Twitter
-#       href:
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: BlueSky
+      href: https://bsky.app/profile/s0-and-s0.bsky.social/post/3lmas3nqzcc2c
+      title: Link to BS thread for this post
+
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_reentrancy-guard-and-assembly-deep-dive-activity-7315107085258506240-jy8K
+      title: Link to LinkedIn thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/114298547086356970
+      title: Link to Toot thread for this post
+
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1909341297397420369
+      title: Link to Tweet thread for this post
 
 attribution:
   links:
