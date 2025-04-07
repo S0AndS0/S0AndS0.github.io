@@ -34,7 +34,7 @@ man -P 'less -ip "^patterns"' ssh_config
 
 man -P 'less -ip "^tokens"' ssh_config
 
-man -P 'less -ip "<TOPIC>"' ssh_config
+man -P 'less -ip "^\s+include"' ssh_config
 ```
 
 
@@ -44,7 +44,7 @@ man -P 'less -ip "<TOPIC>"' ssh_config
 - [Defaults for all connections][heading__defaults_for_all_connections]
 - [Prefix configuration with trailing glob][heading__prefix_configuration_with_trailing_glob]
 - [Suffix configuration with leading glob][heading__suffix_configuration_with_leading_glob]
-- [Specificity chaining with globs][heading__specificity_chaining_with_globs]
+- [Organize with `Include` files example][heading__organize_with_include_files_example]
 - [Example usage][heading__example_usage]
 
 
@@ -78,22 +78,31 @@ Host tor-*
   ProxyCommand socat STDIO SOCKS4A:127.0.0.1:%h:%p,socksport=9050
   AddressFamily inet
   Compression yes
+
+Host vnc-*
+  RemoteCommand if ! systemctl --user is-active vncserver; then systemctl --user start vncserver; fi
+  LocalForward 5901 localhost:5901
+  LocalCommand vncviewer localhost:5901
 ```
 
 
-Note, the above requires the **client** has `socat`, and `tor`, installed.  And
-that the **server** has `tor` and `sshd` configured correctly.
-
-Tip, review the
-[Tor Project Onion Service Setup][link__tor_project__onion_service__setup]
-guide for details on how to configure the remote server.  Hint, `9050` should
-match the `SOCKSPort` defined within `/etc/tor/torrc` the **client**
-configuration file.  Default is `9050` for many Linux based devices.
-
-The `%h` and `%p` format strings will automatically be replaced with the
-`HostName` and `Port` for a given `Host` configuration block.  Review the
-`man -P 'less -ip "^tokens"' ssh_config` manual section for more details on
-what other format strings are available to `ProxyCommand` value.
+> Note, the above `Host tor-*` block requires the **client** has `socat`, and
+> `tor`, installed.  And that the **server** has `tor` and `sshd` configured
+> correctly.
+>
+> And the `Host vnc-*` block requires the **server** has a functional VNC
+> server as well as user level SystemD configurations defined.
+>
+> Tip, review the
+> [Tor Project Onion Service Setup][link__tor_project__onion_service__setup]
+> guide for details on how to configure the remote server.  Hint, `9050` should
+> match the `SOCKSPort` defined within `/etc/tor/torrc` the **client**
+> configuration file.  Default is `9050` for many Linux based devices.
+>
+> The `%h` and `%p` format strings will automatically be replaced with the
+> `HostName` and `Port` for a given `Host` configuration block.  Review the
+> `man -P 'less -ip "^tokens"' ssh_config` manual section for more details on
+> what other format strings are available to `ProxyCommand` value.
 
 
 ______
@@ -122,30 +131,99 @@ how the above may be utilized.
 ______
 
 
-## Specificity chaining with globs
-[heading__specificity_chaining_with_globs]: #specificity-chaining-with-globs
+## Organize with `Include` files example
+[heading__organize_with_include_files_example]: #organize-with-include-files-example
 
+
+Personally I find custom SSH `Host` order with increasing specificity, eg.
+`<Network>.<Server>.<User>`, is preferable because it lends itself well both to
+tab-completion as well as file based organization.
+
+Here are a few examples of organizing SSH client configuration by network;
+
+
+- `~/.ssh/hosts.d/home.conf`
 
 ```sshconfig
 ## Shared for all that connect to `rpi`
-Host *rpi*
+Host *home.rpi*
   HostName 10.0.0.42
   Port 2222
 
-## Extend `tor*` configurations previously defined
-Host tor.rpi*
-  HostName AnOnionDomainHere.onion
-
 ## Administrator account for `rpi` server
-Host *rpi.root*
+Host *home.rpi.root*
   User root
   IdentityFile ~/.ssh/rpi-root
 
 ## First normal user for `rpi` server
-Host *rpi.pi*
+Host *home.rpi.pi*
   User pi
   IdentityFile ~/.ssh/rpi-pi
 ```
+
+> Note; the globs/asterisks (`*`) on ether end of `Host` blocks is what allows
+> for using [prefixes][heading__prefix_configuration_with_trailing_glob],
+> and/or [suffixes][heading__suffix_configuration_with_leading_glob], or both
+> within a single connection attempt ;-D
+
+
+- `~/.ssh/hosts.d/tor.conf`
+
+```sshconfig
+Host tor-*
+  ProxyCommand socat STDIO SOCKS4A:127.0.0.1:%h:%p,socksport=9050
+  AddressFamily inet
+  Compression yes
+
+Host tor-home.rpi*
+  HostName AnOnionDomainHere.onion
+```
+
+> Note; due to how globs are parsed, and order of `Include` files, the
+> `HostName` within `~/.ssh/hosts.d/home.conf` for `Host *home.rpi*` will be
+> overwritten/updated by `Host tor-home.rpi*` login attempts!
+
+
+- `~/.ssh/hosts.d/vm.conf`
+
+```sshconfig
+Host vm.manjaro*
+  IdentityFile ~/.ssh/vm-manjaro
+  HostName 192.168.122.127
+
+Host vm.manjaro.root*
+  User root
+
+Host vm.manjaro.s0ands0*
+  User s0ands0
+```
+
+
+- `~/.ssh/config`
+
+```sshconfig
+#
+#   Warning: includes must be at top of file
+#
+Include ~/.ssh/hosts.d/*.conf
+
+#
+#   Defaults for all connections
+#
+Host *
+  IdentitiesOnly yes
+  StrictHostKeyChecking accept-new
+
+#
+#    Modifiers for non-interactive sessions
+#
+Host *batch*
+  BatchMode yes
+```
+
+> Note; the `Include` glob/asterisk (`*`) allows for loading all `.conf` files
+> within the specified directory, which is convenient **only** if order does
+> not mater between given files.  Hence why for organizing first by network ;-D
 
 
 ______
@@ -159,31 +237,34 @@ Login to Raspberry Pi as `pi`, over Tor, and immediately start `screen` session
 
 
 ```bash
-ssh tor.rpi.pi-screen
+ssh tor-home.rpi.pi-screen
 ```
 
-The above functions not only because of globing, but also because of the order
-of `Host` definitions and overrides.  Expanded out the above command may be
-treated as though the following configurations are explicitly defined;
+The above functions because of globing definitions and order of overrides.
+Expanded out the above command may be treated as though the following
+configurations are explicitly defined;
 
 
 ```sshconfig
-Host tor.rpi.pi-screen
+Host tor-rpi.pi-screen
   # Host *
   IdentitiesOnly yes
+  StrictHostKeyChecking accept-new
 
   # Host tor-*
   ProxyCommand socat STDIO SOCKS4A:127.0.0.1:%h:%p,socksport=9050
+  AddressFamily inet
+  Compression yes
 
-  # Host *rpi*
+  # Host *home.rpi*
   #   HostName 10.0.0.42
   Port 2222
 
-  # Host tor.rpi*
-  HostName AnOnionDomainHere.onion
-
-  # Host *rpi.pi*
+  # Host *home.rpi.pi*
   User pi
+
+  # Host tor-home.rpi*
+  HostName AnOnionDomainHere.onion
 
   # Host *-screen
   RemoteCommand screen -RD ssh
@@ -193,3 +274,4 @@ Host tor.rpi.pi-screen
 
 
 [link__tor_project__onion_service__setup]: https://community.torproject.org/onion-services/setup/
+[link__github__tigervnc__systemd]: https://github.com/TigerVNC/tigervnc/issues/1096
