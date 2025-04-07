@@ -69,6 +69,7 @@ Disallow: /assets/ai/bait.zip
 
 Sitemap: {{ "sitemap.xml" | absolute_url }}
 
-# By scraping data from this site you agree to pay 10% of your organization's
-# annual gross revenue for the AI/LLM/ML model training data or derived output.
+# By scraping data from this site without cryptographic signed permission of
+# authors you agree to pay 10% of your organization's annual gross revenue to
+# `s0ands0.eth` monthly until your organization obtians scoped permission.
 
