@@ -328,7 +328,7 @@ from: <tekken.jin0714@gmail.com>
 ---
 
 
-### 2024-11-13 17:12 -- My restiveness is very analytical
+### 2024-11-13 17:12 -- My retentiveness is very analytical
 
 
 ```yaml
