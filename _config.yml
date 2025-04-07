@@ -95,6 +95,9 @@ collections:
   scripting:
     output: true
     permalink: /:collection/:name/
+  solidity:
+    output: true
+    permalink: /:collection/:name/
   vim:
     output: true
     permalink: /:collection/:name/

@@ -1,0 +1,10 @@
+---
+vim: filetype=liquid.xml
+layout: modules/feed-atom/feed-atom
+title: "Solidity Tips"
+collection_name: solidity
+collection_home: /solidity/
+date: 2025-03-26 18:40:05 -0700
+content_type: xhtml
+permalink: /:collection/:name:output_ext
+---
