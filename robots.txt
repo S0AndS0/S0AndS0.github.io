@@ -71,5 +71,5 @@ Sitemap: {{ "sitemap.xml" | absolute_url }}
 
 # By scraping data from this site without cryptographic signed permission of
 # authors you agree to pay 10% of your organization's annual gross revenue to
-# `s0ands0.eth` monthly until your organization obtians scoped permission.
+# `s0ands0.eth` monthly until your organization obtains scoped permission.
 
