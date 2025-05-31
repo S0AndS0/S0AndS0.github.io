@@ -26,6 +26,7 @@ jobs:
           fetch-depth: 1
           fetch-tags: true
           ref: ${{ github.head_ref }}
+          submodules: 'recursive'
 
       - name: Convert and half-size images with ImageMagick -- Cooking
         uses: gha-utilities/ImageMagick@main
