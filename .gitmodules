@@ -26,3 +26,7 @@
 	path = _includes/modules/includes-attribution
 	url = https://github.com/liquid-utilities/includes-attribution.git
 	branch = main
+[submodule "includes-picture"]
+	path = _includes/modules/includes-picture
+	url = https://github.com/liquid-utilities/includes-picture.git
+	branch = main
