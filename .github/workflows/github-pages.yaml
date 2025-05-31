@@ -28,7 +28,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: Convert and half-size images with ImageMagick -- Cooking
-        uses: gha-utilities/ImageMagick@main
+        uses: gha-utilities/ImageMagick@v0.0.2
         with:
           source_directory: assets/images/cooking
           source_extension: jpg
