@@ -56,6 +56,9 @@ collections:
   css:
     output: true
     permalink: /:collection/:name/
+  cooking:
+    output: true
+    permalink: /:collection/:name/
   docker:
     output: true
     permalink: /:collection/:name/

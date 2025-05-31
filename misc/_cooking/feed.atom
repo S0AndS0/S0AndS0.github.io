@@ -1,0 +1,10 @@
+---
+vim: filetype=markdown.xml
+layout: modules/feed-atom/feed-atom
+title: "Cooking Tips"
+collection_name: cooking
+collection_home: /cooking/
+date: 2025-05-23 07:00:00 -0700
+content_type: xhtml
+permalink: /:collection/:name:output_ext
+---
