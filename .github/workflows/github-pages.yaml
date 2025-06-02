@@ -29,19 +29,19 @@ jobs:
           submodules: 'recursive'
 
       - name: Convert and half-size images with ImageMagick -- Cooking
-        uses: gha-utilities/ImageMagick@v0.0.3
+        uses: gha-utilities/ImageMagick@v0.0.5
         with:
           source_directory: assets/images/cooking
-          source_extension: jpg
+          find_regex: '.*[0-9]+[a-z-]+.jpg'
           destination_extensions: png,avif
           magik_opts: "-resize '50%'"
           destination_name_suffix: '_50-percent'
 
       - name: Convert and quarter-size images with ImageMagick -- Cooking
-        uses: gha-utilities/ImageMagick@v0.0.3
+        uses: gha-utilities/ImageMagick@v0.0.5
         with:
           source_directory: assets/images/cooking
-          source_extension: jpg
+          find_regex: '.*[0-9]+[a-z-]+.jpg'
           destination_extensions: png,avif
           magik_opts: "-resize '25%'"
           destination_name_suffix: '_25-percent'
