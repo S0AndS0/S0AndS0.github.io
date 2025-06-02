@@ -34,7 +34,7 @@ jobs:
           source_directory: assets/images/cooking
           find_regex: '.*[0-9]+[a-z-]+.jpg'
           destination_extensions: png,avif
-          magik_opts: "-resize '50%'"
+          magick_opts: "-resize '50%'"
           destination_name_suffix: '_50-percent'
 
       - name: Convert and quarter-size images with ImageMagick -- Cooking
@@ -43,7 +43,7 @@ jobs:
           source_directory: assets/images/cooking
           find_regex: '.*[0-9]+[a-z-]+.jpg'
           destination_extensions: png,avif
-          magik_opts: "-resize '25%'"
+          magick_opts: "-resize '25%'"
           destination_name_suffix: '_25-percent'
 
       # ↓ Do some site building here ↓
