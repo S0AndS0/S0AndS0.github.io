@@ -28,12 +28,16 @@ pictures:
         srcset: 001-vegetable-base_25-percent.jpg
       - media: '(max-width: 1020px)'
         srcset: 001-vegetable-base_25-percent.png
+      - media: '(max-width: 1020px)'
+        srcset: 001-vegetable-base_25-percent.webp
       - media: '(max-width: 2040px)'
         srcset: 001-vegetable-base_50-percent.avif
       - media: '(max-width: 2040px)'
         srcset: 001-vegetable-base_50-percent.jpg
       - media: '(max-width: 2040px)'
         srcset: 001-vegetable-base_50-percent.png
+      - media: '(max-width: 2040px)'
+        srcset: 001-vegetable-base_50-percent.webp
 
   002-layer-sliced-mushrooms:
     url:
@@ -55,12 +59,16 @@ pictures:
         srcset: 002-layer-sliced-mushrooms_25-percent.jpg
       - media: '(max-width: 1020px)'
         srcset: 002-layer-sliced-mushrooms_25-percent.png
+      - media: '(max-width: 1020px)'
+        srcset: 002-layer-sliced-mushrooms_25-percent.webp
       - media: '(max-width: 2040px)'
         srcset: 002-layer-sliced-mushrooms_50-percent.avif
       - media: '(max-width: 2040px)'
         srcset: 002-layer-sliced-mushrooms_50-percent.jpg
       - media: '(max-width: 2040px)'
         srcset: 002-layer-sliced-mushrooms_50-percent.png
+      - media: '(max-width: 2040px)'
+        srcset: 002-layer-sliced-mushrooms_50-percent.webp
 
   003-stand-broccoli-florets:
     url:
@@ -83,12 +91,16 @@ pictures:
         srcset: 003-stand-broccoli-florets_25-percent.jpg
       - media: '(max-width: 1020px)'
         srcset: 003-stand-broccoli-florets_25-percent.png
+      - media: '(max-width: 1020px)'
+        srcset: 003-stand-broccoli-florets_25-percent.webp
       - media: '(max-width: 2040px)'
         srcset: 003-stand-broccoli-florets_50-percent.avif
       - media: '(max-width: 2040px)'
         srcset: 003-stand-broccoli-florets_50-percent.jpg
       - media: '(max-width: 2040px)'
         srcset: 003-stand-broccoli-florets_50-percent.png
+      - media: '(max-width: 2040px)'
+        srcset: 003-stand-broccoli-florets_50-percent.webp
 
   004-stuff-scored-ribeye:
     url:
@@ -113,12 +125,16 @@ pictures:
         srcset: 004-stuff-scored-ribeye_25-percent.jpg
       - media: '(max-width: 1020px)'
         srcset: 004-stuff-scored-ribeye_25-percent.png
+      - media: '(max-width: 1020px)'
+        srcset: 004-stuff-scored-ribeye_25-percent.webp
       - media: '(max-width: 2040px)'
         srcset: 004-stuff-scored-ribeye_50-percent.avif
       - media: '(max-width: 2040px)'
         srcset: 004-stuff-scored-ribeye_50-percent.jpg
       - media: '(max-width: 2040px)'
         srcset: 004-stuff-scored-ribeye_50-percent.png
+      - media: '(max-width: 2040px)'
+        srcset: 004-stuff-scored-ribeye_50-percent.webp
 
   005-serve-when-done:
     url:
@@ -141,12 +157,16 @@ pictures:
         srcset: 005-serve-when-done_25-percent.jpg
       - media: '(max-width: 1020px)'
         srcset: 005-serve-when-done_25-percent.png
+      - media: '(max-width: 1020px)'
+        srcset: 005-serve-when-done_25-percent.webp
       - media: '(max-width: 2040px)'
         srcset: 005-serve-when-done_50-percent.avif
       - media: '(max-width: 2040px)'
         srcset: 005-serve-when-done_50-percent.jpg
       - media: '(max-width: 2040px)'
         srcset: 005-serve-when-done_50-percent.png
+      - media: '(max-width: 2040px)'
+        srcset: 005-serve-when-done_50-percent.webp
 
 ---
 
