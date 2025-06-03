@@ -33,7 +33,7 @@ jobs:
         with:
           source_directory: assets/images/cooking
           find_regex: '.*[0-9]+[a-z-]+.jpg'
-          destination_extensions: png,avif
+          destination_extensions: avif,jpg,png
           magick_opts: "-resize '50%'"
           destination_name_suffix: '_50-percent'
 
@@ -42,7 +42,7 @@ jobs:
         with:
           source_directory: assets/images/cooking
           find_regex: '.*[0-9]+[a-z-]+.jpg'
-          destination_extensions: png,avif
+          destination_extensions: avif,jpg,png
           magick_opts: "-resize '25%'"
           destination_name_suffix: '_25-percent'
 
