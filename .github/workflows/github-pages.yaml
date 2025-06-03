@@ -29,7 +29,7 @@ jobs:
           submodules: 'recursive'
 
       - name: Convert and half-size images with ImageMagick -- Cooking
-        uses: gha-utilities/ImageMagick@v0.0.5
+        uses: gha-utilities/ImageMagick@v0.0.6
         with:
           source_directory: assets/images/cooking
           find_regex: '.*[0-9]+[a-z-]+.jpg'
@@ -38,7 +38,7 @@ jobs:
           destination_name_suffix: '_50-percent'
 
       - name: Convert and quarter-size images with ImageMagick -- Cooking
-        uses: gha-utilities/ImageMagick@v0.0.5
+        uses: gha-utilities/ImageMagick@v0.0.6
         with:
           source_directory: assets/images/cooking
           find_regex: '.*[0-9]+[a-z-]+.jpg'
@@ -47,8 +47,7 @@ jobs:
           destination_name_suffix: '_25-percent'
 
       - name: Convert PNG images to WebP -- Cooking
-        # uses: gha-utilities/bulk-cwebp@v0.0.1
-        uses: gha-utilities/bulk-cwebp@main
+        uses: gha-utilities/bulk-cwebp@v0.0.2
         with:
           source_directory: assets/images/cooking
           find_regex: '.*_[0-9]+-percent.jpg'
