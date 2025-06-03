@@ -47,7 +47,7 @@ jobs:
           destination_name_suffix: '_25-percent'
 
       - name: Convert PNG images to WebP -- Cooking
-        uses: gha-utilities/bulk-cwebp@v0.0.2
+        uses: gha-utilities/bulk-cwebp@v0.0.3
         with:
           source_directory: assets/images/cooking
           find_regex: '.*_[0-9]+-percent.jpg'
