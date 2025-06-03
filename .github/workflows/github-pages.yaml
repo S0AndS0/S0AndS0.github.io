@@ -46,6 +46,12 @@ jobs:
           magick_opts: "-resize '25%'"
           destination_name_suffix: '_25-percent'
 
+      - name: Convert PNG images to WebP -- Cooking
+        uses: gha-utilities/bulk-cwebp@v0.0.1
+        with:
+          source_directory: assets/images/cooking
+          find_regex: '.*_[0-9]+-percent.jpg'
+
       # ↓ Do some site building here ↓
       - name: Setup pages
         uses: actions/configure-pages@v5.0.0
