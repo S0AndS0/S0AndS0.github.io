@@ -5,6 +5,22 @@ description: Simple slow cooker recipe for beef ribeye roast
 date: 2025-05-23 09:00:00 -0700
 categories: cooking
 
+image: assets/images/cooking/2025-05-23-slow-cooker-beef-ribeye-roast/001-vegetable-base.jpg
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://bsky.app/profile/s0-and-s0.bsky.social/post/3lqiu26nu422m
+      title: Link to Post thread for this post
+    - text: LinkedIn
+      href: https://www.linkedin.com/feed/update/urn:li:activity:7333653023241428992/?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7333653023241428992%2C7334715507570270209%29
+      title: Link to comment thread for this post
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/114604929482073639
+      title: Link to Toot thread for this post
+    - text: Twitter
+      href: https://twitter.com/S0_And_S0/status/1928949814823141804
+      title: Link to Tweet thread for this post
+
 pictures:
   001-vegetable-base:
     url:
