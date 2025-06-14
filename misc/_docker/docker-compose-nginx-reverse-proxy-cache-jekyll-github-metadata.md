@@ -6,6 +6,8 @@ description: >-
   Jekyll GitHub Metadata plugin
 
 date: 2024-04-21 07:09:42 -0700
+date_updated: 2025-06-14 10:06 -0700
+
 layout: post
 categories:
   - docker
@@ -325,6 +327,7 @@ server {
 		proxy_cache_valid 200 302 1d;
 		proxy_ignore_headers Expires Cache-Control Set-Cookie X-Accel-Redirect X-Accel-Expires;
 		proxy_cache_use_stale error timeout invalid_header updating http_500 http_502 http_503 http_504;
+		proxy_cache_background_update on;
 
 		proxy_set_header User-Agent ${GITHUB_USER_NAME};
 		proxy_set_header Authorization "Token ${GITHUB_AUTH_TOKEN}";
@@ -346,6 +349,8 @@ server {
   [`docker-compose.yaml`][heading__dockercomposeyaml] file, and values of
   environment variables are set within the following
   [`.env/nginx.env`][heading__envnginxenv] file.
+- `proxy_cache_background_update` is recommended to set to `on` to reduce
+  time for startup of `docker compuse up`
 {% endcapture %}
 {{ details_summary_content | markdownify }}
 </details>
