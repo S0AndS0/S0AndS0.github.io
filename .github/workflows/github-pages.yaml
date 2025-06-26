@@ -28,8 +28,8 @@ jobs:
           ref: ${{ github.head_ref }}
           submodules: 'recursive'
 
-      - name: Find and freeze first code blocks in Bash collection
-        uses: gha-utilities/freeze-first-code-blocks@main
+      - name: Find and freeze first code blocks in collections
+        uses: gha-utilities/freeze-first-code-blocks@v0.0.2
         with:
           source_directory: misc/_bash
           find_regex: '.*.md'
