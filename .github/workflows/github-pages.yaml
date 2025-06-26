@@ -28,6 +28,15 @@ jobs:
           ref: ${{ github.head_ref }}
           submodules: 'recursive'
 
+      - name: Find and freeze first code blocks in Bash collection
+        uses: gha-utilities/freeze-first-code-blocks@v0.0.1
+        with:
+          source_directory: misc/_bash
+          find_regex: '.*.md'
+          find_regextype: 'emacs'
+          sed_args: '-E'
+          sed_expression: 's@misc/_@assets/images/@'
+
       - name: Convert and half-size images with ImageMagick -- Cooking
         uses: gha-utilities/ImageMagick@v0.0.6
         with:
