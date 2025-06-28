@@ -29,9 +29,9 @@ jobs:
           submodules: 'recursive'
 
       - name: Find and freeze first code blocks in collections
-        uses: gha-utilities/freeze-first-code-blocks@v0.0.2
+        uses: gha-utilities/freeze-first-code-blocks@v0.0.3
         with:
-          source_directory: misc/_bash
+          source_directory: misc
           find_regex: '.*.md'
           find_regextype: 'emacs'
           sed_args: '-E'
