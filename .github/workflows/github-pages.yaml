@@ -85,6 +85,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3.0.1
 
+      - name: Debug image permissions maybe
+        run: |
+          find assets/images/bash -type f -exec ls -hal {} \;
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
