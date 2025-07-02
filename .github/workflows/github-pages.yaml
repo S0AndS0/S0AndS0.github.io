@@ -28,38 +28,38 @@ jobs:
           ref: ${{ github.head_ref }}
           submodules: 'recursive'
 
-      - name: Find and freeze first code blocks in collections
-        uses: gha-utilities/freeze-first-code-blocks@v0.0.4
+      # - name: Find and freeze first code blocks in collections
+      #   uses: gha-utilities/freeze-first-code-blocks@v0.0.4
+      #   with:
+      #     source_directory: misc
+      #     find_regex: '.*.md'
+      #     find_regextype: 'emacs'
+      #     sed_args: '-E'
+      #     sed_expression: 's@misc/_@assets/images/@'
+
+      - name: Convert and half-size images with ImageMagick -- Cooking
+        uses: gha-utilities/ImageMagick@v0.0.6
         with:
-          source_directory: misc
-          find_regex: '.*.md'
-          find_regextype: 'emacs'
-          sed_args: '-E'
-          sed_expression: 's@misc/_@assets/images/@'
+          source_directory: assets/images/cooking
+          find_regex: '.*[0-9]+[a-z-]+.jpg'
+          destination_extensions: avif,jpg,png
+          magick_opts: "-resize 50%"
+          destination_name_suffix: '_50-percent'
 
-      # - name: Convert and half-size images with ImageMagick -- Cooking
-      #   uses: gha-utilities/ImageMagick@v0.0.6
-      #   with:
-      #     source_directory: assets/images/cooking
-      #     find_regex: '.*[0-9]+[a-z-]+.jpg'
-      #     destination_extensions: avif,jpg,png
-      #     magick_opts: "-resize 50%"
-      #     destination_name_suffix: '_50-percent'
+      - name: Convert and quarter-size images with ImageMagick -- Cooking
+        uses: gha-utilities/ImageMagick@v0.0.6
+        with:
+          source_directory: assets/images/cooking
+          find_regex: '.*[0-9]+[a-z-]+.jpg'
+          destination_extensions: avif,jpg,png
+          magick_opts: "-resize 25%"
+          destination_name_suffix: '_25-percent'
 
-      # - name: Convert and quarter-size images with ImageMagick -- Cooking
-      #   uses: gha-utilities/ImageMagick@v0.0.6
-      #   with:
-      #     source_directory: assets/images/cooking
-      #     find_regex: '.*[0-9]+[a-z-]+.jpg'
-      #     destination_extensions: avif,jpg,png
-      #     magick_opts: "-resize 25%"
-      #     destination_name_suffix: '_25-percent'
-
-      # - name: Convert PNG images to WebP -- Cooking
-      #   uses: gha-utilities/bulk-cwebp@v0.0.3
-      #   with:
-      #     source_directory: assets/images/cooking
-      #     find_regex: '.*_[0-9]+-percent.jpg'
+      - name: Convert PNG images to WebP -- Cooking
+        uses: gha-utilities/bulk-cwebp@v0.0.3
+        with:
+          source_directory: assets/images/cooking
+          find_regex: '.*_[0-9]+-percent.jpg'
 
       # - name: Convert with ImageMagick -- first-code-block
       #   uses: gha-utilities/ImageMagick@v0.0.6
