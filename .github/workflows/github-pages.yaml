@@ -62,19 +62,19 @@ jobs:
           source_directory: assets/images/cooking
           find_regex: '.*_[0-9]+-percent.jpg'
 
-      - name: Convert with ImageMagick -- first-code-block
-        uses: gha-utilities/ImageMagick@v0.0.6
-        with:
-          source_directory: assets/images
-          find_regex: '.*first-code-block.png'
-          destination_extensions: avif,jpg
+      # - name: Convert with ImageMagick -- first-code-block
+      #   uses: gha-utilities/ImageMagick@v0.0.6
+      #   with:
+      #     source_directory: assets/images
+      #     find_regex: '.*first-code-block.png'
+      #     destination_extensions: avif,jpg
 
-      - name: Convert PNG images to WebP -- first-code-block
-        uses: gha-utilities/bulk-cwebp@v0.0.3
-        with:
-          source_directory: assets/images
-          find_regex: '.*first-code-block.png'
-          cwebp_opts: '- q 60'
+      # - name: Convert PNG images to WebP -- first-code-block
+      #   uses: gha-utilities/bulk-cwebp@v0.0.3
+      #   with:
+      #     source_directory: assets/images
+      #     find_regex: '.*first-code-block.png'
+      #     cwebp_opts: '- q 60'
 
       # ↓ Do some site building here ↓
       - name: Setup pages
