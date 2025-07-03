@@ -26,41 +26,45 @@ License: MIT
 
           {% assign workspace__layout__home__my_page = site.pages | where: "path", workspace__layout__home__path | first %}
           {% if workspace__layout__home__my_page.title and workspace__layout__home__my_page.collection_name %}
-            <section>
-              <header>
-                <h2>{{ workspace__layout__home__my_page.title | escape }}</h2>
-                <strong>{{ workspace__layout__home__my_page.list_title }}</strong>
-              </header>
+            {% assign collection__files = site[workspace__layout__home__my_page.collection_name] %}
+            {% assign collection__posts = "" | split: "" %}
+            {% if collection__files.size %}
+              {% for file in collection__files %}
+                {% if page.relative_path == file.relative_path %}
+                  {% continue %}
+                {% elsif file.ext == '.xml' or file.ext == '.rss' %}
+                  {% assign has_rss_feed = true %}
+                  {% assign feed_rss_url = file.url %}
+                  {% continue %}
+                {% elsif file.ext == '.atom' %}
+                  {% assign has_atom_feed = true %}
+                  {% assign feed_atom_url = file.url %}
+                  {% continue %}
+                {% elsif file.ext == '.json' %}
+                  {% if file.slug == 'feed' or file.slug == page.collection_name %}
+                    {% assign has_json_feed = true %}
+                    {% assign feed_json_url = file.url %}
+                  {% endif %}
+                  {% continue %}
+                {% elsif file.ext == '.md' or file.ext == '.markdown' %}
+                  {% assign collection__posts = collection__posts | push: file %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% assign collection__files = nil %}
 
-              {% assign collection__posts = site[workspace__layout__home__my_page.collection_name] %}
-              {% if collection__posts.size %}
-                <ul class="post-list">
-                  {% assign post_count = 0 %}
-                  {% for post in collection__posts %}
-                    {% if page.relative_path == post.relative_path %}
-                      {% continue %}
-                    {% elsif post.ext == '.xml' or post.ext == '.rss' %}
-                      {% assign has_rss_feed = true %}
-                      {% assign feed_rss_url = post.url %}
-                      {% continue %}
-                    {% elsif post.ext == '.atom' %}
-                      {% assign has_atom_feed = true %}
-                      {% assign feed_atom_url = post.url %}
-                      {% continue %}
-                    {% elsif post.ext == '.json' %}
-                      {% if post.slug == 'feed' or post.slug == page.collection_name %}
-                        {% assign has_json_feed = true %}
-                        {% assign feed_json_url = post.url %}
-                      {% endif %}
-                      {% continue %}
-                    {% endif %}
-                    {% assign has_output = true %}
+            {% assign collection__posts = collection__posts | sort: 'date' | reverse %}
+            {% if collection__posts.size %}
+              <section>
+                <header>
+                  <h2>{{ workspace__layout__home__my_page.title | escape }}</h2>
+                  <strong>{{ workspace__layout__home__my_page.list_title }}</strong>
+                </header>
 
-                    {% assign post_count = post_count | plus: 1 %}
-                    {% if post_count > collection__posts__limit %}
-                      {% continue %}
-                    {% endif %}
+                {% assign has_output = true %}
 
+                {% for post in collection__posts limit: collection__posts__limit %}
+                  <ul class="post-list">
                     <li>
                       <h3>
                         <a class="post-link" href="{{ post.url | relative_url }}">
@@ -84,12 +88,14 @@ License: MIT
                   {% endfor %}
                 </ul>
 
-                {% assign read_more_count = post_count | minus: collection__posts__limit %}
+                {% assign read_more_count = collection__posts.size | minus: collection__posts__limit %}
                 {% if read_more_count > 0 %}
                   <a class="pagelink" href="{{ workspace__layout__home__my_page.url | relative_url }}">
                     ... and {{ read_more_count }} more available to read!
                   </a>
                 {% endif %}
+
+                {% assign collection__posts = nil %}
               {% endif %}
             </section>
           {% endif %}
