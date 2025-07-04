@@ -23,6 +23,7 @@ License: MIT
           {% assign has_output = false %}
           {% assign has_atom_feed = false %}
           {% assign has_rss_feed = false %}
+          {% assign has_json_feed = false %}
 
           {% assign workspace__layout__home__my_page = site.pages | where: "path", workspace__layout__home__path | first %}
           {% if workspace__layout__home__my_page.title and workspace__layout__home__my_page.collection_name %}
