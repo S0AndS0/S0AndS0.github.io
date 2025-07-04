@@ -5,4 +5,6 @@ list_title: Collection of Erlang tips and tricks
 title: "Erlang Tips"
 date: 2025-01-12 16:29:05 -0800
 categories: tips
+posts_sort_by: date
+posts_reverse: true
 ---

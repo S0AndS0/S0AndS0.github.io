@@ -5,6 +5,8 @@ list_title: Cooking tips and tricks and recipes
 title: "Cooking Tips"
 date: 2025-05-23 07:00:00 -0700
 categories: tips
+posts_sort_by: date
+posts_reverse: true
 ---
 
 

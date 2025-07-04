@@ -5,6 +5,8 @@ list_title: Logs dumped from baiting scammers that make the mistake of reaching-
 title: "Scammer Logs"
 date: 2024-11-13 13:58:05 -0700
 categories: entertainment
+posts_sort_by: date
+posts_reverse: true
 ---
 
 ## Contents
