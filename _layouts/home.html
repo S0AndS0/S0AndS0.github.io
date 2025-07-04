@@ -20,7 +20,6 @@ License: MIT
 
       {% for workspace__layout__home__path in workspace__layout__home__page_paths %}
         {% capture workspace__layout__home__collection %}
-          {% assign has_output = false %}
           {% assign has_atom_feed = false %}
           {% assign has_rss_feed = false %}
           {% assign has_json_feed = false %}
@@ -62,8 +61,6 @@ License: MIT
                   <strong>{{ workspace__layout__home__my_page.list_title }}</strong>
                 </header>
 
-                {% assign has_output = true %}
-
                 {% for post in collection__posts limit: collection__posts__limit %}
                   <ul class="post-list">
                     <li>
@@ -95,8 +92,6 @@ License: MIT
                     ... and {{ read_more_count }} more available to read!
                   </a>
                 {% endif %}
-
-                {% assign collection__posts = nil %}
               {% endif %}
             </section>
           {% endif %}
@@ -106,7 +101,7 @@ License: MIT
             <br>
           {% endunless %}
         {% endcapture %}
-        {% if has_output %}{{ workspace__layout__home__collection | strip_newlines | strip }}{% assign workspace__layout__home__collection = nil %}{% endif %}
+        {% if collection__posts.size %}{{ workspace__layout__home__collection | strip_newlines | strip }}{% assign workspace__layout__home__collection = nil %}{% assign collection__posts = nil %}{% endif %}
       {% endfor %}
     </div>
   {% endif %}
