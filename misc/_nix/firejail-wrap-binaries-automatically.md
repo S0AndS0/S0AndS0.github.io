@@ -12,23 +12,23 @@ date_updated: 2025-07-16 15:35:00 -0700
 date: 2025-07-15 14:30:00 -0700
 
 image: assets/images/nix/firejail-wrap-binaries-automatically/first-code-block.png
-# social_comment:
-#   links:
-#     - text: Blue Sky
-#       href: 
-#       title: Link to Post thread for this post
-#     - text: GitHub Issue
-#       href: 
-#       title: Link to Post thread for this post
-#     - text: LinkedIn
-#       href: 
-#       title: Link to comment thread for this post
-#     - text: Mastodon
-#       href: 
-#       title: Link to Toot thread for this post
-#     - text: Twitter
-#       href: 
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://bsky.app/profile/s0-and-s0.bsky.social/post/3lu4izzygak2l
+      title: Link to Post thread for this post
+    # - text: GitHub Issue
+    #   href: 
+    #   title: Link to Post thread for this post
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_firejail-wrap-binaries-automatically-activity-7351383293612744709-IRfH
+      title: Link to comment thread for this post
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/114865364129453042
+      title: Link to Toot thread for this post
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1945617621577032094
+      title: Link to Tweet thread for this post
 
 attribution:
   links:
