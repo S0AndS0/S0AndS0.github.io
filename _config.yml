@@ -80,6 +80,9 @@ collections:
   linux:
     output: true
     permalink: /:collection/:name/
+  nix:
+    output: true
+    permalink: /:collection/:name/
   posts:
     output: true
     permalink: /:collection/:name/

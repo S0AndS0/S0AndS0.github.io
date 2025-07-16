@@ -1,0 +1,10 @@
+---
+vim: filetype=yaml
+layout: modules/feed-atom/feed-atom
+title: "Nix Tricks"
+collection_name: nix
+collection_home: /nix/
+date: 2025-07-14 12:48:30 -0700
+content_type: xhtml
+permalink: /:collection/:name:output_ext
+---
