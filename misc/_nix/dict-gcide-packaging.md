@@ -12,20 +12,20 @@ date: 2025-07-18 12:58:00 -0700
 # date_updated: 2025-07-21 14:30:00 -0700
 
 image: assets/images/nix/dict-gcide-packaging/first-code-block.png
-# social_comment:
-#   links:
-#     - text: Blue Sky
-#       href: 
-#       title: Link to Post thread for this post
-#     - text: LinkedIn
-#       href: 
-#       title: Link to comment thread for this post
-#     - text: Mastodon
-#       href: 
-#       title: Link to Toot thread for this post
-#     - text: Twitter
-#       href: 
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://bsky.app/profile/s0-and-s0.bsky.social/post/3lulrlz5zms2s
+      title: Link to Post thread for this post
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_dict-gcide-packaging-activity-7353583716725678082-dCIT/
+      title: Link to comment thread for this post
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/114899743346352855
+      title: Link to Toot thread for this post
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1947817871268057283
+      title: Link to Tweet thread for this post
 
 attribution:
   links:
