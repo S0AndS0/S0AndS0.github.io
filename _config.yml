@@ -50,6 +50,9 @@ collections:
   awk:
     output: true
     permalink: /:collection/:name/
+  ai-ml:
+    output: true
+    permalink: /:collection/:name/
   bash:
     output: true
     permalink: /:collection/:name/

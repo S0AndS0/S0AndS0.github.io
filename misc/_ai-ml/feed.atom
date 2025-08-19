@@ -1,0 +1,9 @@
+---
+layout: modules/feed-atom/feed-atom
+title: "AI and ML Tips"
+collection_name: ai-ml
+collection_home: /ai-ml/
+date: 2023-08-26 13:58:05 -0700
+content_type: xhtml
+permalink: /:collection/:name:output_ext
+---
