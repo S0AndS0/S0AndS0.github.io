@@ -11,20 +11,20 @@ time_to_live: 1800
 date: 2025-08-18 17:39 -0700
 # date_updated: 
 
-# social_comment:
-#   links:
-#     - text: Blue Sky
-#       href: 
-#       title: Link to Post thread for this post
-#     - text: LinkedIn
-#       href: 
-#       title: Link to comment thread for this post
-#     - text: Mastodon
-#       href: 
-#       title: Link to Toot thread for this post
-#     - text: Twitter
-#       href: 
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://mastodon.social/@S0AndS0/115053163185979107
+      title: Link to Post thread for this post
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_proompt-engineer-challange-nix-attrsof-activity-7363402424809644032-ihPE
+      title: Link to comment thread for this post
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/115053163185979107
+      title: Link to Toot thread for this post
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1957636755206623712
+      title: Link to Tweet thread for this post
 ---
 
 
