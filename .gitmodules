@@ -30,3 +30,7 @@
 	path = _includes/modules/includes-picture
 	url = https://github.com/liquid-utilities/includes-picture.git
 	branch = main
+[submodule "includes-scripts"]
+	path = _includes/modules/includes-scripts
+	url = https://github.com/liquid-utilities/includes-scripts.git
+	branch = main

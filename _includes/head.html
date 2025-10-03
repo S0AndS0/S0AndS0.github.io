@@ -1,8 +1,8 @@
 {% capture workspace__page_head %}
 {% comment %}
-  vim: filetype=liquid.html
-  Source: https://raw.githubusercontent.com/jekyll/minima/v2.5.1/_includes/head.html
-  License: MIT
+	vim: filetype=liquid.html noexpandtab
+	Source: https://raw.githubusercontent.com/jekyll/minima/v2.5.1/_includes/head.html
+	License: MIT
 {% endcomment %}
 <head>
 	<meta charset="utf-8">
@@ -15,5 +15,6 @@
 		{%- include google-analytics.html -%}
 	{%- endif -%}
 	<link rel="me" href="https://mastodon.social/@S0AndS0">
+	{%- include modules/includes-scripts/includes-scripts.html  -%}
 </head>
 {% endcapture %}{%- if workspace__page_head -%}{{ workspace__page_head | strip_newlines | strip }}{% assign workspace__page_head = nil %}{%- endif -%}
