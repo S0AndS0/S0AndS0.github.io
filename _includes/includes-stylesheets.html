@@ -1,0 +1,28 @@
+{%- capture workspace__includes_stylesheets -%}
+{% comment %}
+  ---
+  vim: filetype=liquid
+  author: S0AndS0
+  license: AGPL-3.0
+  source: https://github.com/liquid-utilities/includes-stylesheet
+  ---
+{% endcomment %}
+{%- if page.stylesheets -%}
+  {% for workspace__includes_stylesheets__stylesheet in page.stylesheets %}
+    {% unless workspace__includes_stylesheets__stylesheet.href %}{% continue %}{% endunless %}
+
+    {% assign workspace__includes_stylesheets__href = workspace__includes_stylesheets__stylesheet.href %}
+    {% unless workspace__includes_stylesheets__href contains "https"%}
+      {% assign workspace__includes_stylesheets__href = workspace__includes_stylesheets__stylesheet.href | relative_url %}
+    {% endunless %}
+
+    {% capture stylesheet_attributes %}href="{{ workspace__includes_stylesheets__href }}"{% endcapture %}
+
+    {% if workspace__includes_stylesheets__stylesheet.media %}
+      {% capture stylesheet_attributes %}{{ stylesheet_attributes }} media="{{ workspace__includes_stylesheets__stylesheet.media }}"{% endcapture %}
+    {% endif %}
+
+    <link {{ stylesheet_attributes }} type="text/css" rel="stylesheet"/>
+  {% endfor %}
+{%- endif -%}
+{%- endcapture -%}{{ workspace__includes_stylesheets | strip | strip_newlines }}{% assign workspace__includes_stylesheets = nil %}

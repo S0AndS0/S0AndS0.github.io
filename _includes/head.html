@@ -15,6 +15,7 @@
 		{%- include google-analytics.html -%}
 	{%- endif -%}
 	<link rel="me" href="https://mastodon.social/@S0AndS0">
-	{%- include modules/includes-scripts/includes-scripts.html  -%}
+	{%- include modules/includes-scripts/includes-scripts.html -%}
+	{%- include includes-stylesheets.html -%}
 </head>
 {% endcapture %}{%- if workspace__page_head -%}{{ workspace__page_head | strip_newlines | strip }}{% assign workspace__page_head = nil %}{%- endif -%}
