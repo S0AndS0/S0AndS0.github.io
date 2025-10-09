@@ -18,23 +18,23 @@ time_to_live: 1800
 date: 2025-10-09 13:31:00 -0700
 
 image: assets/images/git/worktree-sanity/first-code-block.png
-# social_comment:
-#   links:
-#     - text: Blue Sky
-#       href: 
-#       title: Link to Post thread for this post
-#     - text: LinkedIn
-#       href: 
-#       title: Link to comment thread for this post
-#     - text: Mastodon
-#       href: 
-#       title: Link to Toot thread for this post
-#     - text: Odysee
-#       href: 
-#       title: Link to video
-#     - text: Twitter
-#       href: 
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://bsky.app/profile/did:plc:rxh54z4q44ahcswnale26pn2/post/3m2s4vgr4ns2p
+      title: Link to Post thread for this post
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_git-worktree-sanity-activity-7382169189467377665-Efn7/
+      title: Link to comment thread for this post
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/115346394348595917
+      title: Link to Toot thread for this post
+    - text: Odysee
+      href: https://odysee.com/@S0AndS0:0/tech-tips_Git-Worktree-Sanity:8
+      title: Link to video in which I talk you through it
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/1976403523341516884
+      title: Link to Tweet thread for this post
 
 # attribution:
 #   links:
