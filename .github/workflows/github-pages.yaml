@@ -1,7 +1,9 @@
+# yamllint disable rule:line-length
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
 
 permissions:
   contents: read
@@ -77,9 +79,20 @@ jobs:
 
       # ↓ Do some site building here ↓
       - name: Setup pages
+        id: pages
         uses: actions/configure-pages@v5.0.0
-      - name: Build pages
-        uses: actions/jekyll-build-pages@v1
+      - name: Setup Ruby
+        # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
+        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
+        with:
+          ruby-version: '3.1' # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Build with Jekyll
+        # Outputs to the './_site' directory by default
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
       # ↑ Do some site building here ↑
 
       - name: Upload artifact
@@ -96,4 +109,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4.0.5
+        uses: actions/deploy-pages@v5
