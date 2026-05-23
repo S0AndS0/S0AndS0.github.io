@@ -266,7 +266,7 @@ I've a few folks I can reach-out to, once we get to that point, that are pretty
 proficient so I'll ask that ya please coordinate with decision makers so we can
 get admin stuff squared away
 
-### 2026-04-10 16:46 -- Barbosa Renato 4:46 PM
+### 2026-04-10 16:46 -- Barbosa Renato
 
 > Thanks for your sharing.
 >
@@ -280,7 +280,7 @@ get admin stuff squared away
 >
 > You can get project information in more detail.
 
-### 2026-04-10 17:02 -- SOAndSO .eth (Digital Mercenary) 5:02 PM
+### 2026-04-10 17:02 -- SOAndSO .eth (Digital Mercenary)
 
 As we discussed via g-meet; the time I dedicated was predicated on being paid
 for my time, 150USD worth of Ethereum is what we verbally agreed to. Before I
@@ -345,9 +345,9 @@ remaining on your end
 Something to look forward when ya clock-in on Monday, and until then I'll be
 wishing you a wonderful weekend!
 
-### 2026-04-10 17:28 -- Barbosa Renato 5:28 PM
+### 2026-04-10 17:28 -- Barbosa Renato
 
-Thank you.
+> Thank you.
 
 ### 2026-04-11 09:14 -- Barbosa Renato
 
@@ -481,7 +481,8 @@ it'll require ya dedicate funds that fairly compensates me for the time
 
 ### 2026-04-13 17:11 -- SOAndSO .eth (Digital Mercenary)
 
-Then we're back to a deadlock because I will start review upon receipt of payment
+Then we're back to a deadlock because I will start review upon receipt of
+payment
 
 ### 2026-04-13 17:12 -- Barbosa Renato
 
