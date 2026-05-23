@@ -6,23 +6,23 @@ date: 2026-04-10 14:56 0000
 time_to_live: 1800
 tags: [ DM, LinkedIn, RAT, scam ]
 image: assets/images/scammers/2026-04-10_Barbosa-Renato-of-World-Cup-Fantasy-Project/LinkedIn-Header.png
-# social_comment:
-#   links:
-#     - text: Blue Sky
-#       href:
-#       title: Link to thread for this post
-#
-#     - text: LinkedIn
-#       href:
-#       title: Link to LinkedIn thread for this post
-#
-#     - text: Mastodon
-#       href:
-#       title: Link to Toot thread for this post
-#
-#     - text: Twitter
-#       href:
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://bsky.app/profile/did:plc:rxh54z4q44ahcswnale26pn2/post/3mmkgsnx24c2s
+      title: Link to thread for this post
+
+    - text: LinkedIn
+      href: https://www.linkedin.com/feed/update/urn:li:share:7464071173627305984/
+      title: Link to LinkedIn thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/116626114467801742
+      title: Link to Toot thread for this post
+
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/2058305608281940067
+      title: Link to Tweet thread for this post
 ---
 
 
@@ -41,7 +41,7 @@ ______
 - [TLDR][heading__tldr]
   - [Threat actor contact details][heading__threat_actor_contact_details]
 - [DM log][heading__dm_log]
-<!-- - [Got something to say about that?](#heading__social_comment) -->
+- [Got something to say about that?](#heading__social_comment)
 
 
 
