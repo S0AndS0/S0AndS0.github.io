@@ -12,10 +12,9 @@ social_comment:
       href: https://bsky.app/profile/did:plc:rxh54z4q44ahcswnale26pn2/post/3mmzbv5mths2x
       title: Link to thread for this post
 
-    ## Note: LinkedIn seems to have disabled posting :-[
-    # - text: LinkedIn
-    #   href:
-    #   title: Link to LinkedIn thread for this post
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_yet-another-scam-recruiter-scamcruiter-share-7466211785415503872-CeF-/
+      title: Link to LinkedIn thread for this post
 
     - text: Mastodon
       href: https://mastodon.social/@S0AndS0/116659547309228298
@@ -36,7 +35,6 @@ social_comment:
   - [Threat actor contact details][heading__threat_actor_contact_details]
 - [DM log][heading__dm_log]
 - [Meeting highlights][heading__meeting_highlights]
-  - [2026-05-29 17:12 -- Luis][heading__20260529_1712_luis]
 - [Got something to say about that?](#heading__social_comment)
 
 
@@ -319,8 +317,6 @@ ______
 **TLDR:** is a basic clone repository and run it pweeze scam :-|
 
 ### 2026-05-29 17:12 -- Luis
-[heading__20260529_1712_luis]: #20260529-1712-luis
-
 
 - Luis: ... lots of BS to lead-up to links for exploitation attempt...
   - shares link to website; `https://aitech.io/`
