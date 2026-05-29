@@ -120,7 +120,7 @@ Corporation:
   Twitter: http://www.twitter.com/AITECHio
   Facebook: https://www.facebook.com/AITECHio
   Telegram: https://t.me/solidusaichat
-  LinkedIn: https://linkedin.com/company/solidus-ai-tech-ltd/mycompany/
+  LinkedIn: https://linkedin.com/company/solidus-ai-tech-ltd/
   GitHub: https://github.com/solidus-aitech/ACN-Verse/
   LinkedTree: https://linktr.ee/solidusaitech
   Medium: https://medium.com/@solidusaitech
