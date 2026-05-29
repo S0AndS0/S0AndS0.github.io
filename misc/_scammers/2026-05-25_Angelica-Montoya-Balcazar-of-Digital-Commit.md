@@ -6,23 +6,24 @@ date: 2026-05-25 15:35 0000
 time_to_live: 1800
 tags: [ DM, LinkedIn, RAT, scam ]
 image: assets/images/scammers/2026-05-25_Angelica-Montoya-Balcazar-of-Digital-Commit/LinkedIn-Header.png
-# social_comment:
-#   links:
-#     - text: Blue Sky
-#       href:
-#       title: Link to thread for this post
-#
-#     - text: LinkedIn
-#       href:
-#       title: Link to LinkedIn thread for this post
-#
-#     - text: Mastodon
-#       href:
-#       title: Link to Toot thread for this post
-#
-#     - text: Twitter
-#       href:
-#       title: Link to Tweet thread for this post
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://bsky.app/profile/did:plc:rxh54z4q44ahcswnale26pn2/post/3mmzbv5mths2x
+      title: Link to thread for this post
+
+    ## Note: LinkedIn seems to have disabled posting :-[
+    # - text: LinkedIn
+    #   href:
+    #   title: Link to LinkedIn thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/116659547309228298
+      title: Link to Toot thread for this post
+
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/2060445421097386297
+      title: Link to Tweet thread for this post
 ---
 
 
