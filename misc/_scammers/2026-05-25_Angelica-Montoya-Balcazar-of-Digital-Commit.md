@@ -97,8 +97,12 @@ async function validateApiKey() {
 [heading__threat_actor_contact_details]: #threat-actor-contact-details
 
 **Note** `Angelica Montoya Balcazar` and `Luis` are almost certainly
-Ne'er-do-wells, as is the "AI Tech io" corporation, where as `Contributors`
+ne'er-do-wells, as is the "AI Tech io" corporation, where as `Contributors`
 section may be hit-and-miss for attribution.
+
+The "AI Tech io" `Corporation` may, or may not, be apart of this team of threat
+actors. GitHub link that Luis provided points to an Org that points to "AI Tech
+io" but none of those links point back to GitHub.
 
 ```yaml
 Angelica Montoya Balcazar:
@@ -116,6 +120,15 @@ Corporation:
   Telegram: https://t.me/solidusaichat
   LinkedIn: https://linkedin.com/company/solidus-ai-tech-ltd/mycompany/
   GitHub: https://github.com/solidus-aitech/ACN-Verse/
+  LinkedTree: https://linktr.ee/solidusaitech
+  Medium: https://medium.com/@solidusaitech
+  YouTube: https://www.youtube.com/@solidusaitech
+  CoinMarketCap: https://coinmarketcap.com/currencies/solidus-ai-tech/
+  Reddit: https://www.reddit.com/r/AITECHio/
+  CoinGecko: https://www.coingecko.com/en/coins/solidus-ai-tech
+  Discord: https://discord.gg/solidus-ai-tech-938725761865625600
+  Instagram: https://www.instagram.com/aitechio/
+  Flooz: https://flooz.xyz/AITECHio
 
 # git shortlog --summary --numbered --email
 Contributors:
