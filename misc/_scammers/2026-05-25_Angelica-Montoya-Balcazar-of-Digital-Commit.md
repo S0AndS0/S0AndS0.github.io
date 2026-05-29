@@ -59,6 +59,8 @@ grep -rinE '\b(verify|setApiKey)\b'
 grep -rinE '\b(AUTH_API)\b'
 ```
 
+Deobfuscated RAT stager code then looks something like;
+
 ```javascript
 //> controllers/auth.js
 const setApiKey = (s) => atob(s);
