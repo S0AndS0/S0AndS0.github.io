@@ -37,7 +37,7 @@ social_comment:
 - [DM log][heading__dm_log]
 - [Meeting highlights][heading__meeting_highlights]
   - [2026-05-29 17:12 -- Luis][heading__20260529_1712_luis]
-<!-- - [Got something to say about that?](#heading__social_comment) -->
+- [Got something to say about that?](#heading__social_comment)
 
 
 ______
@@ -47,6 +47,7 @@ ______
 [heading__tldr]: #tldr
 
 ### Exploit hunting tricks
+[heading__exploit_hunting_tricks]: #exploit-hunting-tricks
 
 As seems usual for this team of threat actors a simple set of `grep` commands
 makes quick work of hunting down exploitation attempt;
@@ -229,6 +230,7 @@ ______
 
 
 ## DM log
+[heading__dm_log]: #dm-log
 
 ### 2026-05-25 19:46 -- Angélica Montoya Balcazar
 
