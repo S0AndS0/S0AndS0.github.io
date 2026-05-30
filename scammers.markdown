@@ -15,7 +15,7 @@ posts_reverse: true
 - [Tips to protect yourselves][heading__tips_to_protect_yourselves]
   - [For employees and job seekers][heading__for_employees_and_job_seekers]
   - [For employers hiring managers and recruiters][heading__for_employers_hiring_managers_and_recruiters]
-    - [Option one -- Download a repo and serach for author email][heading__option_one_download_a_repo_and_serach_for_author_email]
+    - [Option one -- Download a repo and search for author email][heading__option_one_download_a_repo_and_search_for_author_email]
     - [Option two -- Use the GitHub API and a bit of Bash scripting][heading__option_two_use_the_github_api_and_a_bit_of_bash_scripting]
 - [{{ page.list_title }}](#{{ page.list_title | slugify: "ascii" }})
 
@@ -78,8 +78,8 @@ options; including one requiring no downloads at all!
 
 ---
 
-#### Option one: Download a repo and serach for author email
-[heading__option_one_download_a_repo_and_serach_for_author_email]: #option-one-download-a-repo-and-serach-for-author-email
+#### Option one: Download a repo and search for author email
+[heading__option_one_download_a_repo_and_search_for_author_email]: #option-one-download-a-repo-and-search-for-author-email
 
 0. Find a repositories the applicant has published
   - GitHub URL syntax: `https://github.com/<GITHUB_USER_NAME>?tab=repositories&q=&type=source&language=&sort=`
