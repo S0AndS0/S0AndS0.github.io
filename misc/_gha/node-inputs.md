@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Node Inputs"
+description: How to define and read GitHub Action Workflow inputs
 date: 2019-08-22 14:58:05 -0700
 categories: gha github actions inputs node
 ---
