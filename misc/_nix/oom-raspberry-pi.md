@@ -39,9 +39,23 @@ attribution:
       href: https://github.com/henrygd/beszel/discussions/1433
       title: Missing memory stats in Systemd Services table on Raspberry Pi
 
-#     - text: 
-#       href: 
-#       title: 
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://bsky.app/profile/did:plc:rxh54z4q44ahcswnale26pn2/post/3moripql24k2r
+      title: Link to thread for this post
+
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_foss-nixos-linux-share-7474312121619582976-BK_Z/
+      title: Link to LinkedIn thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/116786127310807841
+      title: Link to Toot thread for this post
+
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/2068546405518447059
+      title: Link to Tweet thread for this post
 ---
 
 
