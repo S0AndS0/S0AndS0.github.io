@@ -41,8 +41,9 @@ minima:
 
 plugins:
   - jekyll-feed
-  - jekyll-github-metadata
+  # - jekyll-github-metadata
 
+repo_id: 33033733
 
 ## Thanks be to - https://jekyllrb.com/docs/collections/
 collections_dir: misc
