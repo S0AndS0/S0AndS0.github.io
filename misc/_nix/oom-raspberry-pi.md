@@ -4,8 +4,11 @@ title: OOM Raspberry Pi
 description: Managing out of memory conditions with grace on low memory devices
 date: 2026-06-15 19:29 -0000
 categories: nix
+tags: [ nix, nixos, raspbery-pi, linux, memory ]
 layout: post
 time_to_live: 1800
+image: assets/images/nix/oom-raspberry-pi/first-code-block.png
+
 attribution:
   links:
     - text: Cameron McKay -- Stop your Raspberry Pi NixOS builds from crashing
