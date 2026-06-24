@@ -3,7 +3,7 @@ vim: spell nowrap textwidth=79
 title: DRM Widevine on Raspberry Pi
 description: Partially functional setup for chromium and gecko based browsers with investigation notes on where things are broken
 date: 2026-06-24 10:12 -0000
-# date_updated: 
+date_updated: 2026-06-25 20:14 -0000
 categories: nix
 tags: [ nix, nixos, raspbery-pi, linux, drm ]
 layout: post
@@ -55,6 +55,28 @@ attribution:
     - text: GitHub Gist -- `ruario` -- A script that fetches a ChromeOS image
       href: https://gist.github.com/ruario/19a28d98d29d34ec9b184c42e5f8bf29
       title: A script that fetches a ChromeOS image
+
+    - text: PINE64 -- PineTab2 FAQ -- Can PineTab2 play back DRM content such as Netflix?
+      href: https://wiki.pine64.org/wiki/PineTab2_FAQ#Can_PineTab2_play_back_DRM_content_such_as_Netflix%3F
+      title: Can PineTab2 play back DRM content such as Netflix?
+
+social_comment:
+  links:
+    - text: Blue Sky
+      href: https://bsky.app/profile/s0-and-s0.bsky.social/post/3mp2ylfivdk2j
+      title: Link to thread for this post
+
+    - text: LinkedIn
+      href: https://www.linkedin.com/posts/s0ands0_linux-nixos-raspberrypi-share-7475680616420872192-hfoj/
+      title: Link to LinkedIn thread for this post
+
+    - text: Mastodon
+      href: https://mastodon.social/@S0AndS0/116807509286320005
+      title: Link to Toot thread for this post
+
+    - text: Twitter
+      href: https://x.com/S0_And_S0/status/2069914895345205288
+      title: Link to Tweet thread for this post
 ---
 
 
@@ -72,15 +94,17 @@ system wide, for applying explicit modifications to various web-browsers;
 }:
 
 rec {
-  chromium.drm.brave.package.overrideAttrs.postInstall = ''
-    mkdir -p $out/opt/brave.com/brave/WidevineCdm/_platform_specific/linux_arm64
+  chromium.drm = {
+    brave.package.overrideAttrs.postInstall = ''
+      mkdir -p $out/opt/brave.com/brave/WidevineCdm/_platform_specific/linux_arm64
 
-    ln -s "${widevine-cdm}/share/google/chrome/WidevineCdm/_platform_specific/linux_arm64/libwidevinecdm.so" \
-      $out/opt/brave.com/brave/WidevineCdm/_platform_specific/linux_arm64/
+      ln -s "${widevine-cdm}/share/google/chrome/WidevineCdm/_platform_specific/linux_arm64/libwidevinecdm.so" \
+        $out/opt/brave.com/brave/WidevineCdm/_platform_specific/linux_arm64/
 
-    ln -s "${widevine-cdm}/share/google/chrome/WidevineCdm/manifest.json" \
-      $out/opt/brave.com/brave/WidevineCdm/
-  '';
+      ln -s "${widevine-cdm}/share/google/chrome/WidevineCdm/manifest.json" \
+        $out/opt/brave.com/brave/WidevineCdm/
+    '';
+  };
 
   gecko.drm = {
     default.package.overrideAttrs.buildCommand = ''
@@ -129,7 +153,10 @@ rec {
 
 #### Streaming services that no works
 
-- Netflix
+- Netflix, works with Brave/Chromium with `"Mozilla/5.0 (X11; CrOS x86_64
+  14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0
+  Safari/537.36"` user-agent string
+
    JavaScript console for all browsers so far tested says;
 
    ```
@@ -181,6 +208,10 @@ in
         (pkgs.lib.attrByPath [ "postInstall" ] "" old)
         + package-modifications_web-browsers.chromium.drm.brave.package.overrideAttrs.postInstall;
     });
+
+    commandLineArgs = [
+      "--user-agent='Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'"
+    ];
   };
 
   programs.firefox = {
@@ -220,6 +251,8 @@ ______
 
 ## Investigating why Netflix no works
 
+**2026-06-25 update** Brave/Chromium seems to work by modifying user-agent
+string, as shown above, and following sub-sections can be ignored.
 
 ### Query Nix store requisites
 
